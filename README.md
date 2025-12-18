@@ -10,17 +10,19 @@
 
 # 
 
-# This repository documents my daily progress during the \*\*BridgeLabz Training Program\*\*. Each day includes learnings, practice tasks, and outcomes to track consistency and growth.
+# This repository documents my daily progress during the \*\*BridgeLabz Training Program (Capgemini)\*\*. It serves as a structured learning log to track concepts learned, hands-on practice, and overall growth throughout the training period.
+
+# 
+
+# The goal is to maintain consistency, improve problem-solving skills, and build a strong foundation in software development.
 
 # 
 
 # ---
 
+# 
 
-
-
-
-# \## Day 1 – Training Progress
+# \## 📅 Day 1 – Training Progress
 
 # 
 
@@ -28,55 +30,85 @@
 
 # \*\*Date:\*\* 18 December 2025
 
+# 
 
+# ---
 
 # 
 
-# \## ✅ Day 1 Progress
+# \## ✅ Key Learnings \& Activities
 
 # 
 
-# \* Set up the development environment (Visual Studio, .NET SDK)
-
-# \* Understood basic project structure in C# / .NET
-
-# \* Learned how to run C# programs using `dotnet run`
-
-# \* Practiced basic C# programs:
+# \### 🔧 Environment Setup
 
 # 
 
-# &nbsp; \* Hello World
+# \* Installed and configured \*\*Visual Studio\*\*
 
-# &nbsp; \* Taking user input from console
+# \* Set up \*\*.NET SDK\*\* for C# development
 
-# &nbsp; \* Simple arithmetic operations
-
-# \* Understood common compilation/runtime errors and how to fix them
-
-# \* Learned basic Git commands:
+# \* Verified environment by running sample programs
 
 # 
 
-# &nbsp; \* Initializing a repository
-
-# &nbsp; \* Creating `.gitignore`
-
-# &nbsp; \* Committing code
-
-
-
-# \* Clarified concepts around:
-
-
-
-# &nbsp; \* .NET vs ASP.NET
-
-# &nbsp; \* Interpreted VS Complied Language
+# \### 💻 C# / .NET Fundamentals
 
 # 
 
+# \* Understood the \*\*basic structure of a C# program\*\*
+
+# \* Learned how to execute programs using `dotnet run`
+
+# \* Gained clarity on console-based applications
+
 # 
+
+# \### 🧪 Hands-on Practice
+
+# 
+
+# \* Implemented basic C# programs:
+
+# 
+
+# &nbsp; \* Hello World application
+
+# &nbsp; \* Taking user input from the console
+
+# &nbsp; \* Performing simple arithmetic operations
+
+# 
+
+# \### 🐞 Debugging \& Errors
+
+# 
+
+# \* Identified common \*\*compilation and runtime errors\*\*
+
+# \* Learned how to read error messages and apply fixes effectively
+
+# 
+
+# \### 🌱 Git \& Version Control Basics
+
+# 
+
+# \* Initialized a Git repository
+
+# \* Created and understood the purpose of a `.gitignore` file
+
+# \* Committed code changes using Git
+
+# 
+
+# \### 📘 Conceptual Clarity
+
+# 
+
+# \* Difference between \*\*.NET\*\* and \*\*ASP.NET\*\*
+
+# \* Understanding \*\*Compiled vs Interpreted Languages\*\*
 
 # 
 
@@ -84,7 +116,23 @@
 
 # 
 
-# 📈 \*This README will be updated daily to reflect ongoing progress throughout the training.\*
+# \## 🎯 Takeaways
+
+# 
+
+# \* Built a solid starting foundation in C# and .NET
+
+# \* Gained confidence in running and debugging console applications
+
+# \* Understood the importance of version control in daily development
+
+# 
+
+# ---
+
+# 
+
+# 📈 \*This README will be updated daily to reflect continuous learning and progress throughout the BridgeLabz Training.\*
 
 
 

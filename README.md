@@ -1,4 +1,4 @@
-# BridgeLabz-Training
+﻿# BridgeLabz-Training
 
 ## 📅 Day 01
 **Date:** 18-12-2025 (Thursday)
@@ -13,13 +13,6 @@
 - Setup system for csharp and .net development
 - Solved **10 basic programming questions**(sum of two numbers, KM to Miles, Average of three numbers, Simple Interest etc)
 
-### 📝 LeetCode/Self-Learning Questions
-- Revere an Array
-- Max element in an array
-- Min element in an array
-- Even Odd
-- Two Sum Problem(LeetCode Question 01)
-
 ### 🔮 Upcoming Learning
 - C# Elements of Programming:
   - Variables  
@@ -27,5 +20,14 @@
   - Primitive Data Types  
   - Basic Input / Output  
   - Operators  
+
+## 📅 Day 02
+**Date:** 19-12-2025 (Friday)
+### 📘 What I Learned
+  
+### 📝 Assignment for the Day
+
+### 🔮 Upcoming Learning
+
 
 ---

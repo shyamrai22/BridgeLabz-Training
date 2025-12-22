@@ -72,6 +72,35 @@ It helps track consistency, hands-on practice, and conceptual understanding of *
 
 ---
 
+## 📅 Day 03
+
+**Date:** 20-12-2025 (Saturday)
+
+### 📘 What I Learned
+
+* Learned the overall **code structure of C# programs**
+* Did hands-on practice in C#, which enhanced my understanding of **syntax and formatting**
+* Practiced multiple questions involving **data types and operators** to understand them in depth
+* Gained detailed knowledge about **access modifiers** and their real-world usage in programs
+
+### 📝 Assignment for the Day
+
+* Solved the **second PDF of programming elements**
+* Worked on various problem statements that required using different **data types and operators**
+* Implemented logic for real-life problems such as:
+
+  * Swap Two Numbers
+  * Chocolate Distribution
+  * Finding Perimeter of Shapes
+  * Finding Area of Various Geometrical Shapes
+
+### 🔮 Upcoming Learning
+
+* Control flow statements in C#
+* Switch case statements in C#
+
+---
+
 ## 📌 Notes
 - All programs are written in **C#**
 - Git is used for version control and daily tracking

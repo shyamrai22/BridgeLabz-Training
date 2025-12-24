@@ -101,6 +101,63 @@ It helps track consistency, hands-on practice, and conceptual understanding of *
 
 ---
 
+## 📅 Day 04
+
+**Date:** 21-12-2025 (Monday)
+
+## 📘 What I Learned
+
+- Learned the concept of **control flow statements** in C# and how they affect program execution  
+- Gained understanding of **conditional statements** such as `if`, `if-else`, and `switch`  
+- Learned about **different types of loops** in C# including:
+  - `for` loop  
+  - `while` loop  
+  - `do-while` loop  
+- Understood the **use cases of each loop** and when to use them  
+- Set up **Visual Studio** and learned how to:
+  - Create a new C# project  
+  - Build and run C# programs  
+- Improved coding skills through hands-on practice with control flow and looping concepts  
+
+## 📝 Assignment for the Day
+
+- Solved **Level 1 and Level 2 problems** based on:
+  - Control flow statements  
+  - Looping concepts  
+- Implemented multiple logic-based programs using conditions and loops  
+- Practiced problem-solving using real-life scenarios to strengthen programming logic  
+
+## 🔮 Upcoming Learning
+
+- Arrays in C#  
+- Methods in C#
+
+---
+
+## 📅 Day 05
+
+**Date:** 22-12-2025 (Tuesday)
+
+## 📘 What I Learned
+
+- Learned about **arrays in C#** and their importance in storing multiple values of the same data type  
+- Understood **array declaration, initialization, and indexing**  
+- Learned various **use cases of arrays** in real-world and programming problems  
+- Practiced accessing and manipulating array elements using loops  
+
+
+## 📝 Assignment for the Day
+
+- Solved **Level 3 problems** related to **control flow statements**  
+- Started solving **Level 1 problems of arrays**  
+- Practiced combining **loops and arrays** to solve logical problems  
+
+## 🔮 Upcoming Learning
+
+- Methods in C#
+
+---
+
 ## 📌 Notes
 - All programs are written in **C#**
 - Git is used for version control and daily tracking

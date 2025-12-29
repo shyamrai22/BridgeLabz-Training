@@ -14,7 +14,7 @@ generation, following clean coding practices and version control principles.
 
 namespace BridgeLabzTraining.Scenario_Based
 {
-    internal class SnakeAndLadder
+    internal class SnakeAndLadderGame
     {
         // Method to start the Snake and Ladder game
         public static void Implementation()

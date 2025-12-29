@@ -12,7 +12,7 @@ namespace BridgeLabzTraining.extras_csharp_built_in_functions.level_02
             Console.WriteLine("3> Multiplication");
             Console.WriteLine("4> Division");
 
-            int c = Input("Enter choice 1-4: ");
+            int c = int.Parse(Console.ReadLine();
 
             double num1 = DoubleInput("Enter 1st number: ");
             double num2 = DoubleInput("Enter 2nd number: ");

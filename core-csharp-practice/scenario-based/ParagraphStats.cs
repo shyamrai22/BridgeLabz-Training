@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Text;
 /*
+    <summary>
     This program analyzes a given paragraph of text by counting the total number of words, identifying
     and displaying the longest word, and replacing all occurrences of a specified word with another word
     in a case-insensitive manner. It also safely handles edge cases such as empty input or paragraphs
     containing only whitespace to ensure reliable and accurate text processing.
+    </summary>
 */
 namespace BridgeLabzTraining.scenario_based
 {
@@ -25,6 +27,7 @@ namespace BridgeLabzTraining.scenario_based
             Console.Write("Give your choice (1/2/3/4): ");
             int choice = int.Parse(Console.ReadLine());
 
+            // To perform menu-driven actions
             switch(choice)
             {
                 case 1:
@@ -66,9 +69,14 @@ namespace BridgeLabzTraining.scenario_based
                     Console.WriteLine($"Para after replacing <{word2}> with <{replace2}> : ");
                     Console.WriteLine(ReplaceWords(paragraph, replace2, word2));
                     break;
+
+                default:
+                    Console.WriteLine("Enter a valid choice.");
+                    break;
             }
         }
 
+        // To replace specific word
         public static string ReplaceWords(string paragraph, string replace, string word)
         {
             StringBuilder modifiedParagraph = new StringBuilder();
@@ -103,6 +111,7 @@ namespace BridgeLabzTraining.scenario_based
             return modifiedParagraph.ToString();
         }
         
+        // To count number of words in paragraph
         public static int WordCount(string paragraph)
         {
             int count = 0;
@@ -126,6 +135,7 @@ namespace BridgeLabzTraining.scenario_based
             return count;
         }
 
+        // To find the longest word
         public static string LongestWord(string paragraph)
         {
             int len = 0;
@@ -140,7 +150,7 @@ namespace BridgeLabzTraining.scenario_based
                         longest = temp.ToString();
                         len = temp.Length;
                     }
-                    temp.Clear();
+                    temp.Clear(); // to clear temp
 
                 }
                 else
@@ -152,6 +162,7 @@ namespace BridgeLabzTraining.scenario_based
             return longest;
         }
 
+        // Method to call the above methods
         public static void Caller()
         {
             Console.WriteLine("Enter a paragraph below :");

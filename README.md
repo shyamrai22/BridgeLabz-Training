@@ -1,17 +1,30 @@
-﻿# BridgeLabz-Training
+﻿# 🚀 BridgeLabz Training
 
-## 📅 Day 01
+This repository documents my **daily learning progress** during the **BridgeLabz Training Program**, focusing on C#, .NET fundamentals, problem-solving, and software development best practices.
+
+---
+
+## 📅 Day 01  
 **Date:** 18-12-2025 (Thursday)
+
 ### 📘 What I Learned
-- .NET and C# fundamentals
-- Git fundamentals(Creation of Repository,creation of new branch, commit, push, status etc)
-- IL and CIL
-- Executing C# programs through terminal using:csc file.cs and file.exe
-  
+- .NET and C# fundamentals  
+- Git fundamentals:
+  - Repository creation  
+  - Branch creation  
+  - Commit, push, status, etc.  
+- IL and CIL concepts  
+- Executing C# programs via terminal using:
+  - `csc file.cs`
+  - `file.exe`
 
 ### 📝 Assignment for the Day
-- Setup system for csharp and .net development
-- Solved **10 basic programming questions**(sum of two numbers, KM to Miles, Average of three numbers, Simple Interest etc)
+- Set up the system for C# and .NET development  
+- Solved **10 basic programming problems**, including:
+  - Sum of two numbers  
+  - KM to Miles conversion  
+  - Average of three numbers  
+  - Simple Interest calculation  
 
 ### 🔮 Upcoming Learning
 - C# Elements of Programming:
@@ -21,232 +34,179 @@
   - Basic Input / Output  
   - Operators  
 
-## 📅 Day 02
+---
 
+## 📅 Day 02  
 **Date:** 19-12-2025 (Friday)
 
 ### 📘 What I Learned
-
-* Basic architecture of .NET framework
-* Basic syntax, formatting, and technical structure of C#
-* Access modifiers in C# and their types (`public`, `private`, `protected`, `internal`, `protected internal`)
-* Data types in C#
-* Operators in C# and their usage
-* Type conversion (implicit and explicit) and use of operators in expressions
+- Basic architecture of the .NET framework  
+- C# syntax, formatting, and technical structure  
+- Access modifiers in C#:
+  - `public`, `private`, `protected`, `internal`, `protected internal`  
+- Data types and operators in C#  
+- Type conversion (implicit and explicit)  
+- Usage of operators in expressions  
 
 ### 📝 Assignment for the Day
-
-* Solved programming questions from **two different PDFs** based on programming elements
-* Implemented real-life problem solutions such as:
-
-  * Distance Conversion
-  * Interest Calculator
-  * Side of a Square calculation
-  * Other basic logic-based problems using C# programming elements
+- Solved programming problems from **two different PDFs**  
+- Implemented real-life problem solutions such as:
+  - Distance conversion  
+  - Interest calculator  
+  - Side of a square calculation  
+  - Other logic-based problems  
 
 ### 🔮 Upcoming Learning
+- Control flow statements  
+- Advanced programming element problems  
+- In-depth understanding of access modifiers  
 
-* Control flow statements in C#
-* Advanced questions on programming elements
-* In-depth learning of Access Modifiers
+---
 
-## 📅 Day 03
-
+## 📅 Day 03  
 **Date:** 20-12-2025 (Saturday)
 
 ### 📘 What I Learned
-
-* Learned the overall **code structure of C# programs**
-* Did hands-on practice in C#, which enhanced my understanding of **syntax and formatting**
-* Practiced multiple questions involving **data types and operators** to understand them in depth
-* Gained detailed knowledge about **access modifiers** and their real-world usage in programs
+- Overall **structure of C# programs**  
+- Hands-on coding practice to improve syntax understanding  
+- Solved problems using **data types and operators**  
+- Gained deeper insight into **access modifiers** and their usage  
 
 ### 📝 Assignment for the Day
-
-* Solved the **second PDF of programming elements**
-* Worked on various problem statements that required using different **data types and operators**
-* Implemented logic for real-life problems such as:
-
-  * Swap Two Numbers
-  * Chocolate Distribution
-  * Finding Perimeter of Shapes
-  * Finding Area of Various Geometrical Shapes
+- Solved the **second PDF** of programming elements  
+- Implemented real-life logic problems such as:
+  - Swap two numbers  
+  - Chocolate distribution  
+  - Perimeter of shapes  
+  - Area of geometrical shapes  
 
 ### 🔮 Upcoming Learning
+- Control flow statements  
+- Switch case statements  
 
-* Control flow statements in C#
-* Switch case statements in C#
-
-## 📅 Day 04
-
-**Date:** 21-12-2025 (Monday)
 ---
-## 📘 What I Learned
 
-- Learned the concept of **control flow statements** in C# and how they affect program execution  
-- Gained understanding of **conditional statements** such as `if`, `if-else`, and `switch`  
-- Learned about **different types of loops** in C# including:
-  - `for` loop  
-  - `while` loop  
-  - `do-while` loop  
-- Understood the **use cases of each loop** and when to use them  
-- Set up **Visual Studio** and learned how to:
-  - Create a new C# project  
-  - Build and run C# programs  
-- Improved coding skills through hands-on practice with control flow and looping concepts
-  
-## 📝 Assignment for the Day
-- Solved **Level 1 and Level 2 problems** based on:
-  - Control flow statements  
-  - Looping concepts  
-- Implemented multiple logic-based programs using conditions and loops  
-- Practiced problem-solving using real-life scenarios to strengthen programming logic
-   
-## 🔮 Upcoming Learning
-- Arrays in C#  
-- Strings in C#
+## 📅 Day 04  
+**Date:** 21-12-2025 (Monday)
 
- ## 📅 Day 05
+### 📘 What I Learned
+- Control flow statements and program execution  
+- Conditional statements:
+  - `if`, `if-else`, `switch`  
+- Looping constructs:
+  - `for`  
+  - `while`  
+  - `do-while`  
+- Use cases of each loop  
+- Visual Studio setup:
+  - Creating projects  
+  - Building and running applications  
 
+### 📝 Assignment for the Day
+- Solved **Level 1 and Level 2 problems** on:
+  - Control flow  
+  - Loops  
+- Implemented logic-based programs using real-life scenarios  
+
+### 🔮 Upcoming Learning
+- Arrays  
+- Strings  
+
+---
+
+## 📅 Day 05  
 **Date:** 22-12-2025 (Tuesday)
 
-## 📘 What I Learned
+### 📘 What I Learned
+- Arrays in C# and their importance  
+- Array declaration, initialization, and indexing  
+- Real-world use cases of arrays  
+- Manipulating array elements using loops  
 
-- Learned about **arrays in C#** and their importance in storing multiple values of the same data type  
-- Understood **array declaration, initialization, and indexing**  
-- Learned various **use cases of arrays** in real-world and programming problems  
-- Practiced accessing and manipulating array elements using loops  
+### 📝 Assignment for the Day
+- Solved **Level 3 problems** on control flow  
+- Started **Level 1 array problems**  
+- Combined arrays with loops to solve logic-based problems  
 
-## 📝 Assignment for the Day
+### 🔮 Upcoming Learning
+- Methods in C#  
 
-- Solved **Level 3 problems** related to **control flow statements**  
-- Started solving **Level 1 problems of arrays**  
-- Practiced combining **loops and arrays** to solve logical problems  
+---
 
-## 🔮 Upcoming Learning
-- Methods in C#
-## 📅 Day 06
-
+## 📅 Day 06  
 **Date:** 23-12-2025 (Wednesday)
 
-## 📘 What I Learned
+### 📘 What I Learned
+- 2D arrays and their implementation  
+- Declaring, initializing, and accessing 2D arrays  
+- Basics of methods in C#  
+- Writing reusable methods for cleaner code  
+- Applying arrays and methods together  
 
-- Learned about **2D arrays in C#** and their implementation  
-- Understood how to **declare, initialize, and access elements** of 2D arrays  
-- Learned the **basics of methods in C#**, including method declaration and usage  
-- Practiced breaking programs into **reusable methods** for better code structure  
-- Improved logical thinking by applying arrays and methods together
-   
-## 📝 Assignment for the Day
+### 📝 Assignment for the Day
+- Solved **Level 2 array problems**  
+- Worked on real-world problems such as:
+  - BMI calculation  
+  - Student grades  
+  - Largest and second-largest digit in a number  
 
-- Solved **Level 2 problems on arrays**  
-- Worked on conventional problem statements using **1D and 2D arrays**, such as:
-  - BMI Calculation  
-  - Grades of Students  
-  - Finding the Largest and Second Largest Digit in a Number  
-- Strengthened understanding of array-based problem solving
-  
-## 🔮 Upcoming Learning
+### 🔮 Upcoming Learning
+- Methods in C#  
 
-- Methods in C#
+---
 
-📅 **DAY 07**
-
+## 📅 Day 07  
 **Date:** 24-12-2025 (Thursday)
 
-📘 **WHAT I LEARNED**
+### 📘 What I Learned
+- Methods in C#  
+- Importance and use cases of methods  
+- Code reusability, modularity, and readability  
+- Method declaration, definition, and calling  
 
-• Learned about **Methods in C#**
+### 📝 Assignment for the Day
+- Solved **Level 1 and Level 2** method problems  
+- Implemented real-life problems using methods:
+  - Unit conversion  
+  - Voter eligibility check  
 
-• Understood the **importance, implications, and use-cases** of methods
+### 🔮 Upcoming Learning
+- Scenario-based questions  
+- Introduction to **OOPs**  
 
-• Learned how methods improve **code reusability, modularity, and readability**
+---
 
-• Practiced **method declaration, definition, and calling**
-
-• Improved logical thinking by breaking programs into **reusable methods**
-
-📝 **ASSIGNMENT FOR THE DAY**
-
-• Solved **Level 1 and Level 2** problem sets on methods
-
-• Implemented **basic programming questions using methods**
-
-• Practiced **hands-on method calling** from the `Main()` method
-
-• Solved real-life based problems:
-
-  - **Unit Conversion**    
-  - **Voter’s Eligibility Check**
-
-• Strengthened understanding of **method-based problem solving**
-
-🔮 **UPCOMING LEARNING**
-
-• Solving **scenario-based questions**
-
-• Introduction to **OOPs (Object-Oriented Programming)** concepts
-
-📅 **DAY 08**
-
+## 📅 Day 08  
 **Date:** 26-12-2025 (Friday)
 
+### 📘 What I Learned
+- Solving scenario-based problems  
+- Step-by-step problem analysis  
+- Breaking complex problems into smaller tasks  
+- Research on real-world usage of methods  
 
-📘 **WHAT I LEARNED**
+### 📝 Assignment for the Day
+- Solved **Snake and Ladder** scenario-based problem  
+- Completed **Level 3 problems** on methods  
 
-• Learned how to solve **scenario-based problems**
+### 🔮 Upcoming Learning
+- OOPs concepts  
 
-• Understood how to **approach a problem step-by-step**
+---
 
-• Practiced breaking complex scenarios into **smaller logical steps**
-
-• Did additional **research on methods** and learned their **real-world use cases**
-
-• Improved problem-solving and analytical thinking skills
-
-📝 **ASSIGNMENT FOR THE DAY**
-
-• Solved a **scenario-based Snake and Ladder problem**
-
-• Solved **Level 3 problems on Methods**
-
-• Applied methods effectively to handle complex logic
-
-• Strengthened confidence in solving **real-life scenario-based questions**
-
-
-🔮 **UPCOMING LEARNING**
-
-• **OOPs (Object-Oriented Programming)**
-
-
-📅 **DAY 09**
-
+## 📅 Day 09  
 **Date:** 29-12-2025 (Monday)
 
-📘 **WHAT I LEARNED**
+### 📘 What I Learned
+- Advanced scenario-based problem solving  
+- Solved multiple scenario-based questions  
+- Fundamentals of **Classes and Objects**  
+- Mapping real-world entities using OOP concepts  
 
-• Gained deeper understanding of solving **scenario-based questions**
+### 📝 Assignment for the Day
+- Solved two scenario-based problems  
+- Completed **Level 1 problems** on classes and objects  
+- Practiced creating and using objects  
 
-• Solved **two different types of scenario-based problems**, each involving **distinct scenarios**
-
-• Improved ability to analyze problem statements and design step-by-step solutions
-
-• Learned the fundamentals of **Classes and Objects in OOPs**
-
-• Understood how real-world entities are represented using classes and objects
-
-📝 **ASSIGNMENT FOR THE DAY**
-
-• Solved **two scenario-based questions**
-
-• Completed **Level 1 problems on Classes and Objects**
-
-• Practiced creating classes, objects, and accessing their members
-
-• Strengthened foundational knowledge of **OOPs concepts**
-
-
-🔮 **UPCOMING LEARNING**
-
-• **Pillars of OOPs**
+### 🔮 Upcoming Learning
+- **Pillars of OOPs**

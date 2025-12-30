@@ -121,7 +121,7 @@ namespace BridgeLabzTraining.scenario_based._30th_December
             Console.WriteLine("3. Calculate percentage");
             Console.WriteLine("4. All of the above");
             Console.WriteLine();
-            Console.WriteLine("Enter your choice(1/2/3/4) : ");
+            Console.Write("Enter your choice(1/2/3/4) : ");
             int choice = int.Parse(Console.ReadLine());
             if(choice < 1 || choice > 4)
             {

@@ -34,12 +34,12 @@ namespace BridgeLabzTraining.scenario_based._30th_December
             Console.WriteLine("Q--> Are you a guest. y/n (Yes/No)");
             Console.Write("A--> ");
             ans = Console.ReadLine();
-            if(ans == "y")
+            if(ans.ToLower() == "y")
             {
                 admin = false;
                 Console.WriteLine("Welcome User");
             } 
-            else if(ans == "n")
+            else if(ans.ToLower() == "n")
             {
                 Console.Write("Enter the code to verify --> ");
                 string inputPasskey = Console.ReadLine();
@@ -122,19 +122,23 @@ namespace BridgeLabzTraining.scenario_based._30th_December
         {
             Console.Write("Enter name of the book --> ");
             string name = Console.ReadLine();
+            bool found = false;
 
             for (int record = 0; record < bookDatabase.GetLength(0); record++)
             {
-                if (bookDatabase[record, 0].Equals(name, StringComparison.OrdinalIgnoreCase))
+                // OrdinalIgnoreCase is used to check for similarity between strings without taking case  into account
+                if (bookDatabase[record, 0].IndexOf(name, StringComparison.OrdinalIgnoreCase) >= 0) 
                 {
+                    Console.WriteLine("-------------------------------------");
                     Console.WriteLine($"Bookname --> {bookDatabase[record,0]}");
                     Console.WriteLine($"Author --> {bookDatabase[record,1]}");
                     Console.WriteLine($"Status --> {bookDatabase[record,2]}");
-                    return;
+                    Console.WriteLine("-------------------------------------");
+                    found = true;
                 }
             }
-
-            Console.WriteLine("Book not found.");
+            if(!found)
+                Console.WriteLine("Book not found.");
         }
         
         // Method is used to display all the books in database

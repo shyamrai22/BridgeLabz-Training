@@ -33,6 +33,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.mathematical_op
             if(num <= 0)
             {
                 Console.WriteLine("Enter valid number");
+                return;
             }
             int fact = 1;
             int temp = num;
@@ -66,6 +67,11 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.mathematical_op
         // Method to calculate GCD of two numbers
         public void GCD(int num1, int num2)
         {
+            if (num1 <= 0 || num2 <= 0)
+            {
+                Console.WriteLine("Enter valid positive numbers");
+                return;
+            }
             int gcd = 1;
             for (int i = Math.Min(num1, num2); i >= 1; i--)
             {
@@ -81,6 +87,12 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.mathematical_op
         // method to find the nth Fibonacci number
         public int Fibonacci(int n)
         {
+            if (n < 0)
+            {
+                Console.WriteLine("Enter a non-negative number");
+                return -1;
+            }
+
             if (n <= 1)
                 return n;
 

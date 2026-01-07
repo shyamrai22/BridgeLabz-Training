@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BridgeLabzTraining.oops_csharp_practice.scenario_based.hospital_patient_management_system;
+using System;
 
 namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_management
 {
@@ -19,8 +20,11 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
                 Console.WriteLine("Employee is Absent");
 
             // UC:02
-            int wage = employeeService.CalculateDailyWage();
-            Console.WriteLine($"Daily wage --> {wage}");
+            if (isPresent)
+            {
+                int dailyWage = employeeService.CalculateDailyWage();
+                Console.WriteLine($"Daily Employee Wage: {dailyWage}");
+            }
         }
     }
 }

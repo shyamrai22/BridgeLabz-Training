@@ -25,6 +25,13 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
                 int dailyWage = employeeService.CalculateDailyWage();
                 Console.WriteLine($"Daily Employee Wage: {dailyWage}");
             }
+
+            // UC:03
+            if (isPresent)
+            {
+                int dailyWage = employeeService.CalculatePartTimeWage();
+                Console.WriteLine($"Part Time Employee Wage: {dailyWage}");
+            }
         }
     }
 }

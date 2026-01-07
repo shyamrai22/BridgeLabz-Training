@@ -11,5 +11,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
 
         // UC:02
         int CalculateDailyWage();
+
+        // UC:03
+        int CalculatePartTimeWage();
     }
 }

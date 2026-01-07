@@ -7,6 +7,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
         private Employee employee;
         private int WAGE_PER_HOUR = 20;
         private int FULL_DAY_HOURS = 8;
+        private int PART_TIME_HOURS = 4;
 
         public Employee AddEmployee()
         {
@@ -27,6 +28,13 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
         public int CalculateDailyWage()
         {
             int wage = WAGE_PER_HOUR * FULL_DAY_HOURS;
+            return wage;
+        }
+
+        // UC:03
+        public int CalculatePartTimeWage()
+        {
+            int wage = WAGE_PER_HOUR * PART_TIME_HOURS;
             return wage;
         }
 

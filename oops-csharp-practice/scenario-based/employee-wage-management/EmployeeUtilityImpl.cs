@@ -38,5 +38,24 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
             return wage;
         }
 
+        // UC:04
+        public int GetWorkingHour()
+        {
+            Random random = new Random();
+            int attendance = random.Next(3);
+
+            switch(attendance)
+            {
+                case 1:
+                    return FULL_DAY_HOURS;
+
+                case 2:
+                    return PART_TIME_HOURS;
+
+                default:
+                    return 0;
+            }
+        }
+
     }
 }

@@ -1,5 +1,4 @@
-﻿using BridgeLabzTraining.oops_csharp_practice.scenario_based.hospital_patient_management_system;
-using System;
+﻿using System;
 
 namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_management
 {
@@ -7,31 +6,65 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
     {
         private IEmployee employeeService;
 
-        public void EmployeeChoice()
+        public EmployeeMenu()
         {
             employeeService = new EmployeeUtilityImpl();
+        }
 
-            // UC:01
+        // UC:01
+        public void UC1_AttendanceCheck()
+        {
+            bool isPresent = employeeService.IsEmployeePresent();
+
+            Console.WriteLine(isPresent
+                ? "Employee is Present"
+                : "Employee is Absent");
+        }
+
+        // UC:02
+        public void UC2_DailyWage()
+        {
             bool isPresent = employeeService.IsEmployeePresent();
 
             if (isPresent)
-                Console.WriteLine("Employee is Present");
+                Console.WriteLine($"Daily Wage: {employeeService.CalculateDailyWage()}");
             else
-                Console.WriteLine("Employee is Absent");
+                Console.WriteLine("Employee is absent");
+        }
 
-            // UC:02
-            if (isPresent)
-            {
-                int dailyWage = employeeService.CalculateDailyWage();
-                Console.WriteLine($"Daily Employee Wage: {dailyWage}");
-            }
+        // UC:03
+        public void UC3_PartTimeWage()
+        {
+            bool isPresent = employeeService.IsEmployeePresent();
 
-            // UC:03
             if (isPresent)
+                Console.WriteLine($"Part-Time Wage: {employeeService.CalculatePartTimeWage()}");
+            else
+                Console.WriteLine("Employee is absent");
+        }
+
+        // UC:04
+        public void UC4_SwitchCaseAttendance()
+        {
+            int hoursWorked = employeeService.GetWorkingHour();
+            if(hoursWorked == 0)
             {
-                int dailyWage = employeeService.CalculatePartTimeWage();
-                Console.WriteLine($"Part Time Employee Wage: {dailyWage}");
+                Console.WriteLine("Employee is absent");
+                return;
             }
+            if(hoursWorked == 4)
+            {
+                Console.WriteLine("Part-Time Employee");
+            }
+            if(hoursWorked == 8)
+            {
+                Console.WriteLine("Full-Time Employee");
+            }
+            int wage = hoursWorked * 20;
+
+            Console.WriteLine($"Hours Worked: {hoursWorked}");
+            Console.WriteLine($"Daily Wage: {wage}");
         }
     }
+
 }

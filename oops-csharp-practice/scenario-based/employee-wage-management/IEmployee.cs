@@ -20,5 +20,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
 
         // UC:05
         int CalculateMonthlyWage();
+
+        // UC:06
+        int CalculateWageWithCondition();
     }
 }

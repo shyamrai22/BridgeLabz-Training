@@ -69,6 +69,25 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
             return totalWage;
         }
 
+        // UC:06
+        public int CalculateWageWithCondition()
+        {
+            int totalHours = 0;
+            int totalDays = 0;
+            int totalWage = 0;
+
+            while (totalHours < 100 && totalDays < 20)
+            {
+                int hours = GetWorkingHour();
+                totalHours += hours;
+                totalWage += hours * WAGE_PER_HOUR;
+                if(hours > 0) 
+                    totalDays++;
+            }
+            return totalWage;
+        }
+
+
 
     }
 }

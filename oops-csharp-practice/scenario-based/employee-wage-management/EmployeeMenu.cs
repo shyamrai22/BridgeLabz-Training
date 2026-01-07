@@ -65,6 +65,13 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
             Console.WriteLine($"Hours Worked: {hoursWorked}");
             Console.WriteLine($"Daily Wage: {wage}");
         }
+         
+        // UC:05
+        public void UC5_MonthlyWage()
+        {
+            int monthyWage = employeeService.CalculateMonthlyWage();
+            Console.WriteLine($"Monthly wage of employee is: {monthyWage}");
+        }
     }
 
 }

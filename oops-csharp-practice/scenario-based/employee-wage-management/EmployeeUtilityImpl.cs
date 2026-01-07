@@ -57,5 +57,18 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
             }
         }
 
+        // UC:05
+        public int CalculateMonthlyWage()
+        {
+            int totalWage = 0;
+
+            for (int day = 1; day <= 20; day++)
+            {
+                totalWage += GetWorkingHour() * WAGE_PER_HOUR;
+            }
+            return totalWage;
+        }
+
+
     }
 }

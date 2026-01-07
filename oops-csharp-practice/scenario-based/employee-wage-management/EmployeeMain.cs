@@ -18,7 +18,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
                 Console.WriteLine("2. UC2 - Daily Wage");
                 Console.WriteLine("3. UC3 - Part-Time Wage");
                 Console.WriteLine("4. UC4 - Switch Case Attendance");
-                //Console.WriteLine("5. UC5 - Monthly Wage");
+                Console.WriteLine("5. UC5 - Monthly Wage");
                 //Console.WriteLine("6. UC6 - Wage till Max Hours or Days");
                 Console.WriteLine("7. Exit");
                 Console.Write("Enter choice: ");
@@ -43,9 +43,9 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
                         employeeMenu.UC4_SwitchCaseAttendance();
                         break;
 
-                    //case 5:
-                    //    employeeMenu.UC5_MonthlyWage();
-                    //    break;
+                    case 5:
+                        employeeMenu.UC5_MonthlyWage();
+                        break;
 
                     //case 6:
                     //    employeeMenu.UC6_MaxHoursOrDays();

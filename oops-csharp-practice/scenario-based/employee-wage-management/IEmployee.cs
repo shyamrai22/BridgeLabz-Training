@@ -8,5 +8,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
 
         // UC:01
         bool IsEmployeePresent();
+
+        // UC:02
+        int CalculateDailyWage();
     }
 }

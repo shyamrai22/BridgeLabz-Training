@@ -17,6 +17,10 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
                 Console.WriteLine("Employee is Present");
             else
                 Console.WriteLine("Employee is Absent");
+
+            // UC:02
+            int wage = employeeService.CalculateDailyWage();
+            Console.WriteLine($"Daily wage --> {wage}");
         }
     }
 }

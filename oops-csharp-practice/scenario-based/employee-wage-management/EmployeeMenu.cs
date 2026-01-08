@@ -32,27 +32,27 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
                 switch (choice)
                 {
                     case 1:
-                        UC1_AttendanceCheck();
+                        AttendanceCheck();
                         break;
 
                     case 2:
-                        UC2_DailyWage();
+                        DailyWage();
                         break;
 
                     case 3:
-                        UC3_PartTimeWage();
+                        PartTimeWage();
                         break;
 
                     case 4:
-                        UC4_SwitchCaseAttendance();
+                        SwitchCaseAttendance();
                         break;
 
                     case 5:
-                        UC5_MonthlyWage();
+                        MonthlyWage();
                         break;
 
                     case 6:
-                        UC6_MaxHoursOrDays();
+                        MaxHoursOrDays();
                         break;
 
                     case 7:
@@ -68,14 +68,14 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
         }
 
         // UC:01
-        public void UC1_AttendanceCheck()
+        public void AttendanceCheck()
         {
             bool isPresent = employeeService.IsEmployeePresent();
             Console.WriteLine(isPresent ? "Employee is Present" : "Employee is Absent");
         }
 
         // UC:02
-        public void UC2_DailyWage()
+        public void DailyWage()
         {
             if (employeeService.IsEmployeePresent())
                 Console.WriteLine($"Daily Wage: {employeeService.CalculateDailyWage()}");
@@ -84,7 +84,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
         }
 
         // UC:03
-        public void UC3_PartTimeWage()
+        public void PartTimeWage()
         {
             if (employeeService.IsEmployeePresent())
                 Console.WriteLine($"Part-Time Wage: {employeeService.CalculatePartTimeWage()}");
@@ -93,7 +93,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
         }
 
         // UC:04
-        public void UC4_SwitchCaseAttendance()
+        public void SwitchCaseAttendance()
         {
             int hoursWorked = employeeService.GetWorkingHour();
 
@@ -118,14 +118,14 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
         }
 
         // UC:05
-        public void UC5_MonthlyWage()
+        public void MonthlyWage()
         {
             int monthlyWage = employeeService.CalculateMonthlyWage();
             Console.WriteLine($"Monthly wage of employee is: {monthlyWage}");
         }
 
         // UC:06
-        public void UC6_MaxHoursOrDays()
+        public void MaxHoursOrDays()
         {
             int monthlyWage = employeeService.CalculateWageWithCondition();
             Console.WriteLine($"Monthly wage of employee is: {monthlyWage}");

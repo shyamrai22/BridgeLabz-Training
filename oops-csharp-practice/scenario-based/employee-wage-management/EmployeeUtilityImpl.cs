@@ -5,9 +5,9 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
     class EmployeeUtilityImpl : IEmployee
     {
         private Employee employee;
-        private int WAGE_PER_HOUR = 20;
-        private int FULL_DAY_HOURS = 8;
-        private int PART_TIME_HOURS = 4;
+        private int wagePerHour = 20;
+        private int fullDayHours = 8;
+        private int partTimeHours = 4;
 
         public Employee AddEmployee()
         {
@@ -27,14 +27,14 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
         // UC:02
         public int CalculateDailyWage()
         {
-            int wage = WAGE_PER_HOUR * FULL_DAY_HOURS;
+            int wage = wagePerHour * fullDayHours;
             return wage;
         }
 
         // UC:03
         public int CalculatePartTimeWage()
         {
-            int wage = WAGE_PER_HOUR * PART_TIME_HOURS;
+            int wage = wagePerHour * partTimeHours;
             return wage;
         }
 
@@ -47,10 +47,10 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
             switch(attendance)
             {
                 case 1:
-                    return FULL_DAY_HOURS;
+                    return fullDayHours;
 
                 case 2:
-                    return PART_TIME_HOURS;
+                    return partTimeHours;
 
                 default:
                     return 0;
@@ -64,7 +64,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
 
             for (int day = 1; day <= 20; day++)
             {
-                totalWage += GetWorkingHour() * WAGE_PER_HOUR;
+                totalWage += GetWorkingHour() * wagePerHour;
             }
             return totalWage;
         }
@@ -80,7 +80,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.employee_wage_m
             {
                 int hours = GetWorkingHour();
                 totalHours += hours;
-                totalWage += hours * WAGE_PER_HOUR;
+                totalWage += hours * wagePerHour;
                 if(hours > 0) 
                     totalDays++;
             }

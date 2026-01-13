@@ -384,3 +384,106 @@
 ### 🔮 **Upcoming Learning**
 
 - More on **Four Pillars of OOPs**
+
+
+   ## 📅 **Day 16**
+
+**Date:** 06-01-2026 (Tuesday)
+
+### 📘 **What I Learned**
+
+- Learned about **Polymorphism** and **Abstraction** in OOPs
+- Understood how polymorphism enables **multiple behaviors** for the same method
+- Learned how abstraction helps in **hiding implementation details**
+- Gained clarity on applying these concepts to real-world scenarios
+
+### 📝 **Assignment for the Day**
+
+- Solved a **scenario-based question**:
+  - Customer Service Call Log Manager (tracking and managing call logs)
+- Applied polymorphism and abstraction concepts to design the solution
+- Strengthened understanding of real-life OOPs implementation
+
+### 🔮 **Upcoming Learning**
+
+- **Linked List**
+
+---
+
+## 📅 **Day 17**
+
+**Date:** 07-01-2026 (Wednesday)
+
+### 📘 **What I Learned**
+
+- Learned about **Linked List**, its implementation, and use cases
+- Understood different operations on linked lists
+- Learned how to solve **scenario-based questions using use-case-driven approaches**
+- Practiced pushing scenario-based logic **partially based on use cases**
+
+### 📝 **Assignment for the Day**
+
+- Solved a **scenario-based problem** using newly learned methods
+- Solved assignment questions on **Linked List**
+- Strengthened understanding of linked list traversal and manipulation
+
+### 🔮 **Upcoming Learning**
+
+- **Stack**
+- **Queue**
+- **HashMap**
+- **Hash Functions**
+
+---
+
+## 📅 **Day 18**
+
+**Date:** 08-01-2026 (Thursday)
+
+### 📘 **What I Learned**
+
+- Learned about **Stack**, **Queue**, **HashMap**, and **Hash Functions**
+- Understood their **implementations and use cases**
+- Learned how these data structures improve performance and efficiency
+- Gained clarity on choosing the right data structure for a given problem
+
+### 📝 **Assignment for the Day**
+
+- Solved a **scenario-based question**:
+  - Smart Home Automation System
+- Solved assignment questions on:
+  - Stack
+  - Queue
+  - HashMap
+  - Hash Functions
+- Applied data structures to real-world scenarios
+
+### 🔮 **Upcoming Learning**
+
+- **Sorting Algorithms**
+
+---
+
+## 📅 **Day 19**
+
+**Date:** 09-01-2026 (Friday)
+
+### 📘 **What I Learned**
+
+- Learned about **different sorting algorithms**
+- Understood **how and when to use specific sorting techniques** for efficiency
+- Gained insight into time and space complexity considerations
+- Learned how sorting improves data processing performance
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - ATM Dispenser
+  - FitTrack – Fitness Tracker
+- Solved assignment questions based on **sorting algorithms**
+- Strengthened understanding of sorting through practical use cases
+
+### 🔮 **Upcoming Learning**
+
+- **Linear Search**
+- **Binary Search**

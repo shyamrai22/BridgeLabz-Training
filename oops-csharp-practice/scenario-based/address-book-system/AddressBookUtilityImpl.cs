@@ -4,5 +4,6 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
 {
     class AddressBookUtilityImpl : IAddressBook
     {
+        private Contact[] AddressBook = new Contact[10];
     }
 }

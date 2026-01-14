@@ -3,7 +3,7 @@
     interface IAddressBook
     {
         void AddContact(Contact contact);
-
+        bool DeleteContact(Contact contact);
         Contact GetContact(string name);
     }
 }

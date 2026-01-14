@@ -122,5 +122,42 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
             Console.WriteLine("Contact Updated Successfully!");
             Console.WriteLine(contactToUpdate);
         }
+
+        // searching a contact in address book by name and then deleting it
+        public void StartC()
+        {
+            Console.WriteLine("Enter the name to search");
+            string name = (Console.ReadLine()).Trim();
+            Contact contactToDelete = AddressBookService.GetContact(name);
+            if (contactToDelete == null)
+            {
+                Console.WriteLine("No match found!");
+                return;
+            }
+            Console.WriteLine("Do you want to delete the contact?");
+            Console.WriteLine("1. Yes");
+            Console.WriteLine("2. No");
+            
+            Console.Write("Enter your choice: ");
+            int choice = int.Parse(Console.ReadLine());
+
+            switch (choice)
+            {
+                case 1:
+                    bool done = AddressBookService.DeleteContact(contactToDelete);
+                    if (done)
+                        Console.WriteLine("Contact deleted successfully");
+                    else
+                        Console.WriteLine("Contact not deleted due to some error");
+                    break;
+
+                case 2:
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid choice");
+                    break;
+            }
+        }
     }
 }

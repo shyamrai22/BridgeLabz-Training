@@ -27,7 +27,33 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
                 }
             }
             return null;
-        } 
+        }
+
+        public bool DeleteContact(Contact contact)
+        {
+            for (int i = 0; i < AddressBookIndex; i++)
+            {
+                string fullName =
+                    $"{AddressBook[i].FirstName} {AddressBook[i].LastName}".Trim();
+
+                string enteredName = $"{contact.FirstName} {contact.LastName}".Trim();
+
+                if (fullName.Equals(enteredName, StringComparison.OrdinalIgnoreCase))
+                {
+                    for (int j = i; j < AddressBookIndex - 1; j++)
+                    {
+                        AddressBook[j] = AddressBook[j + 1];
+                    }
+
+                    AddressBook[AddressBookIndex - 1] = null;
+                    AddressBookIndex--;
+
+                    return true;
+                }
+            }
+            return false;
+        }
+
 
 
     }

@@ -2,5 +2,6 @@
 {
     interface IAddressBook
     {
+        void AddContact(Contact contact);
     }
 }

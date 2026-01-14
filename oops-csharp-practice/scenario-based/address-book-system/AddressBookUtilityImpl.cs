@@ -14,8 +14,21 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
                 Console.WriteLine("Address book is already full");
                 return;
             }
-            AddressBook[AddressBookIndex] = contact;
+            AddressBook[AddressBookIndex++] = contact;
         }
+
+        public Contact GetContact(string name)
+        {
+            for(int i = 0; i < AddressBookIndex; i++)
+            {
+                if ($"{AddressBook[i].FirstName} {AddressBook[i].LastName}".Trim().Equals(name.Trim(),StringComparison.OrdinalIgnoreCase))
+                {
+                    return AddressBook[i];
+                }
+            }
+            return null;
+        } 
+
 
     }
 }

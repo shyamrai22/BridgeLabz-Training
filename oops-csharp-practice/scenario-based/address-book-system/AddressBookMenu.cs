@@ -6,10 +6,15 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
     {
         private IAddressBook AddressBookService;
 
-        public void StartA()
+        // Constructor → single shared instance
+        public AddressBookMenu()
         {
             AddressBookService = new AddressBookUtilityImpl();
+        }
 
+        // added a feature to add a contact
+        public void StartA()
+        {
             // calling AddContact() from utility
             Console.WriteLine("Enter Contact Details");
             Console.WriteLine("----------------------");
@@ -56,6 +61,66 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
 
             Console.WriteLine("Contact Added Successfully!");
             Console.WriteLine(contact); // calls Contact.ToString()
+        }
+
+        // searching a contact in address book by name and then updating the required property
+        public void StartB()
+        {
+            Console.WriteLine("Enter the name to search");
+            string name = (Console.ReadLine()).Trim();
+            Contact contactToUpdate = AddressBookService.GetContact(name);
+            if (contactToUpdate == null)
+            {
+                Console.WriteLine("No match found!");
+                return;
+            }
+            Console.WriteLine("What do you want to edit?");
+            Console.WriteLine("1. Address");
+            Console.WriteLine("2. City");
+            Console.WriteLine("3. State");
+            Console.WriteLine("4. Zip");
+            Console.WriteLine("5. Phone Number");
+            Console.WriteLine("6. Email");
+
+            Console.Write("Enter your choice: ");
+            int choice = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter new value: ");
+            string newValue = Console.ReadLine();
+
+            switch (choice)
+            {
+                case 1:
+                    contactToUpdate.UpdateAddress(newValue);
+                    break;
+
+                case 2:
+                    contactToUpdate.UpdateCity(newValue);
+                    break;
+
+                case 3:
+                    contactToUpdate.UpdateState(newValue);
+                    break;
+
+                case 4:
+                    contactToUpdate.UpdateZip(newValue);
+                    break;
+
+                case 5:
+                    contactToUpdate.UpdatePhoneNumber(newValue);
+                    break;
+
+                case 6:
+                    contactToUpdate.UpdateEmail(newValue);
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid choice");
+                    break;
+            }
+
+            Console.WriteLine("Contact Updated Successfully!");
+            Console.WriteLine(contactToUpdate);
         }
     }
 }

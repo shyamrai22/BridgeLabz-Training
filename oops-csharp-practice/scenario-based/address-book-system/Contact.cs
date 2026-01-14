@@ -26,6 +26,32 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
             this.Email = Email;
         }
 
+        // update methods
+        public void UpdateAddress(string address)
+        {
+            Address = address;
+        }
+        public void UpdateCity(string city)
+        {
+            City = city;
+        }
+        public void UpdateState(string state)
+        {
+            State = state;
+        }
+        public void UpdateZip(string zip)
+        {
+            Zip = zip;
+        }
+        public void UpdatePhoneNumber(string phone)
+        {
+            PhoneNumber = phone;
+        }
+        public void UpdateEmail(string email)
+        {
+            Email = email;
+        }
+
         public override string ToString()
         {
             return $"{FirstName} {LastName} | {City}, {State}, {Zip} | {PhoneNumber} | {Email}";

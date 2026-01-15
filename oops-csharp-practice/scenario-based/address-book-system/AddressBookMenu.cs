@@ -159,5 +159,81 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
                     break;
             }
         }
+
+        // adding multiple contacts to address book
+
+        public void StartD()
+        {
+            bool exit = false;
+            while (!exit)
+            {
+                Console.WriteLine("Do you want to add a contact ");
+                Console.WriteLine("1. Yes");
+                Console.WriteLine("2. No");
+                Console.Write("Enter your choice --> ");
+                int choice = int.Parse(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        // calling AddContact() from utility
+                        Console.WriteLine("Enter Contact Details");
+                        Console.WriteLine("----------------------");
+
+                        Console.Write("First Name: ");
+                        string firstName = Console.ReadLine();
+
+                        Console.Write("Last Name: ");
+                        string lastName = Console.ReadLine();
+
+                        Console.Write("Address: ");
+                        string address = Console.ReadLine();
+
+                        Console.Write("City: ");
+                        string city = Console.ReadLine();
+
+                        Console.Write("State: ");
+                        string state = Console.ReadLine();
+
+                        Console.Write("Zip: ");
+                        string zip = Console.ReadLine();
+                        if (zip.Length != 6)
+                        {
+                            Console.WriteLine("Inavlid zip code entered!");
+                            continue;
+                        }
+
+
+                        Console.Write("Phone Number: ");
+                        string phoneNumber = Console.ReadLine();
+                        if (phoneNumber.Length != 10)
+                        {
+                            Console.WriteLine("Inavlid phone number entered!");
+                            continue;
+                        }
+
+                        Console.Write("Email: ");
+                        string email = Console.ReadLine();
+
+                        // creating a Contact object
+                        Contact contact = new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email);
+
+                        AddressBookService.AddContact(contact);
+
+                        Console.WriteLine("Contact Added Successfully!");
+                        Console.WriteLine(contact); // calls Contact.ToString()
+                        break;
+
+                    case 2:
+                        exit = true;
+                        Console.WriteLine("Exiting...");
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid choice");
+                        break;
+                }
+            }
+
+        }
     }
 }

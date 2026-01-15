@@ -11,16 +11,19 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
             // uc-00
             Console.WriteLine("Welcome to Address Book Program");
             Console.WriteLine("-------------------------------");
-            
+
             // uc-02
-            menu.StartA();
-            
+            //menu.StartA();
+
             //uc-03
-            menu.StartB();
-            
+            //menu.StartB();
+
             //uc-04
-            menu.StartC();
+            //menu.StartC();
             
+            //uc-05
+            menu.StartD();
+
             Console.ReadLine();
         }
     }

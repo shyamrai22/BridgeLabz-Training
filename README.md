@@ -1,5 +1,5 @@
 ﻿# BridgeLabz-Training
-
+---
 ## 📅 Day 01
 **Date:** 18-12-2025 (Thursday)
 ### 📘 What I Learned
@@ -20,7 +20,7 @@
   - Primitive Data Types  
   - Basic Input / Output  
   - Operators  
-
+---
 ## 📅 Day 02
 
 **Date:** 19-12-2025 (Friday)
@@ -49,7 +49,7 @@
 * Control flow statements in C#
 * Advanced questions on programming elements
 * In-depth learning of Access Modifiers
-
+---
 ## 📅 Day 03
 
 **Date:** 20-12-2025 (Saturday)
@@ -76,7 +76,7 @@
 
 * Control flow statements in C#
 * Switch case statements in C#
-
+---
 ## 📅 Day 04
 
 **Date:** 21-12-2025 (Monday)
@@ -105,7 +105,7 @@
 ## 🔮 Upcoming Learning
 - Arrays in C#  
 - Strings in C#
-
+---
  ## 📅 Day 05
 
 **Date:** 22-12-2025 (Tuesday)
@@ -125,6 +125,8 @@
 
 ## 🔮 Upcoming Learning
 - Methods in C#
+
+  ---
 ## 📅 Day 06
 
 **Date:** 23-12-2025 (Wednesday)
@@ -149,7 +151,7 @@
 ## 🔮 Upcoming Learning
 
 - Methods in C#
-
+---
 ## 📅 **Day 07**
 
 **Date:** 24-12-2025 (Thursday)
@@ -225,8 +227,8 @@
 ### 🔮 **Upcoming Learning**
 
 - **Pillars of OOPs**
-
-- ## 📅 **Day 10**
+---
+ ## 📅 **Day 10**
 
 **Date:** 30-12-2025 (Tuesday)
 
@@ -307,7 +309,8 @@
 ### 🔮 **Upcoming Learning**
 
 - **Inheritance**
-
+  
+---
  ## 📅 **Day 13**
 
 **Date:** 02-01-2026 (Friday)
@@ -385,7 +388,7 @@
 
 - More on **Four Pillars of OOPs**
 
-
+---
    ## 📅 **Day 16**
 
 **Date:** 06-01-2026 (Tuesday)
@@ -487,3 +490,54 @@
 
 - **Linear Search**
 - **Binary Search**
+---
+
+  ## 📅 **Day 20**
+
+**Date:** 12-01-2026 (Monday)
+
+### 📘 **What I Learned**
+
+- Learned about **Linear Search** and **Binary Search**
+- Understood their **implementations and use cases**
+- Learned how to choose between linear and binary search based on data size and order
+- Gained clarity on efficiency differences between search techniques
+
+### 📝 **Assignment for the Day**
+
+- Solved **three scenario-based questions**:
+  - Loan Buddy
+  - Metal Factory Pipe Cutting
+  - Custom Furniture Manufacturing
+- Solved assignment questions on:
+  - Linear Search
+  - Binary Search
+- Strengthened understanding of searching techniques through real-world scenarios
+
+### 🔮 **Upcoming Learning**
+
+- **Algorithm’s Runtime Analysis**
+- **Big-O Notation**
+
+---
+
+## 📅 **Day 21**
+
+**Date:** 13-01-2026 (Tuesday)
+
+### 📘 **What I Learned**
+
+- Learned about **Algorithm’s Runtime Analysis**
+- Understood **Big-O Notation** and its importance in measuring algorithm efficiency
+- Learned how to analyze time complexity for different algorithms
+- Gained insight into optimizing code performance
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - Book Buddy
+  - CinemaTalk
+- Applied **OOPs concepts** and their implementations in these problems
+- Solved assignment questions on:
+  - Runtime Analysis
+  - Big-O Notation

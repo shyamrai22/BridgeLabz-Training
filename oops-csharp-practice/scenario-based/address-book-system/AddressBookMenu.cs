@@ -4,12 +4,14 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
 {
     class AddressBookMenu
     {
-        private IAddressBook AddressBookService;
+        private AddressBookSystem addressBookSystem;
+        private IAddressBook AddressBookService; // currently selected book
 
         // Constructor → single shared instance
         public AddressBookMenu()
         {
-            AddressBookService = new AddressBookUtilityImpl();
+            addressBookSystem = new AddressBookSystem();
+            AddressBookService = null; // selected later
         }
 
         // added a feature to add a contact
@@ -137,7 +139,7 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
             Console.WriteLine("Do you want to delete the contact?");
             Console.WriteLine("1. Yes");
             Console.WriteLine("2. No");
-            
+
             Console.Write("Enter your choice: ");
             int choice = int.Parse(Console.ReadLine());
 
@@ -161,7 +163,6 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
         }
 
         // adding multiple contacts to address book
-
         public void StartD()
         {
             bool exit = false;
@@ -235,5 +236,22 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
             }
 
         }
+
+        // adding multiple address books
+        public void StartE()
+        {
+            Console.Write("Enter Address Book Name: ");
+            string bookName = Console.ReadLine().Trim();
+
+            bool created = addressBookSystem.AddAddressBook(bookName);
+
+            if (created)
+                Console.WriteLine("Address Book created successfully!");
+            else
+                Console.WriteLine("Address Book already exists!");
+
+            addressBookSystem.ShowAddressBooks();
+        }
+
     }
 }

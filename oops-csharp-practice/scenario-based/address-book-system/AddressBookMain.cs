@@ -20,9 +20,12 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
 
             //uc-04
             //menu.StartC();
-            
+
             //uc-05
-            menu.StartD();
+            //menu.StartD();
+
+            //uc - 06
+            menu.StartE();
 
             Console.ReadLine();
         }

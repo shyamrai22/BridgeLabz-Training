@@ -215,6 +215,12 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
             }
         }
 
+        public void StartUC11()
+        {
+            if (!SelectBook()) return;
+            bookUtil.SortByName(selectedBook);
+        }
+
 
         // Input Helper
         private Contact TakeInput(bool checkDuplicate)

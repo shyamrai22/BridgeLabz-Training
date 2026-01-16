@@ -7,5 +7,8 @@
         bool DeleteContact(AddressBookSystem book, Contact contact);
         bool IsDuplicateContact(AddressBookSystem book, string firstName, string lastName);
         void PrintFrom(AddressBookSystem book, string location);
+
+        void SortByName(AddressBookSystem book);
+
     }
 }

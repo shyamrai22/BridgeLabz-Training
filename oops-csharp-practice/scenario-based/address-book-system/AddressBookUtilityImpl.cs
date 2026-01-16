@@ -75,5 +75,35 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
                 }
             }
         }
+
+        public void SortByName(AddressBookSystem book)
+        {
+            for (int i = 0; i < book.ContactIndex - 1; i++)
+            {
+                for (int j = 0; j < book.ContactIndex - i - 1; j++)
+                {
+                    Contact c1 = book.Contacts[j];
+                    Contact c2 = book.Contacts[j + 1];
+
+                    string name1 = $"{c1.FirstName} {c1.LastName}";
+                    string name2 = $"{c2.FirstName} {c2.LastName}";
+
+                    if (string.Compare(name1, name2, StringComparison.OrdinalIgnoreCase) > 0)
+                    {
+                        // swap
+                        Contact temp = book.Contacts[j];
+                        book.Contacts[j] = book.Contacts[j + 1];
+                        book.Contacts[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("Contacts sorted alphabetically by name:");
+            for (int i = 0; i < book.ContactIndex; i++)
+            {
+                Console.WriteLine(book.Contacts[i]); // calls ToString()
+            }
+        }
+
     }
 }

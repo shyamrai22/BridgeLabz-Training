@@ -20,7 +20,8 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
                 Console.WriteLine("5 UC-06 Add Address Book");
                 Console.WriteLine("6 UC-07 Prevent Duplicate");
                 Console.WriteLine("7 UC-08 Search City/State");
-                Console.WriteLine("8 Exit");
+                Console.WriteLine("8 UC-09 View Persons by City/State");
+                Console.WriteLine("9 Exit");
 
                 int choice = int.Parse(Console.ReadLine());
 
@@ -33,8 +34,11 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
                     case 5: menu.StartUC6(); break;
                     case 6: menu.StartUC7(); break;
                     case 7: menu.StartUC8(); break;
-                    case 8: exit = true; break;
+                    case 8: menu.StartUC9(); break;
+                    case 9: exit = true; break;
+                    default: Console.WriteLine("Invalid choice"); break;
                 }
+
             }
         }
     }

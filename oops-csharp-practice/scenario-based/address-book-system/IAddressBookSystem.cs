@@ -10,5 +10,7 @@
         void IndexContact(Contact contact);
         void ViewPersonsByCity(string city);
         void ViewPersonsByState(string state);
+        void CountByCity(string city);
+        void CountByState(string state);
     }
 }

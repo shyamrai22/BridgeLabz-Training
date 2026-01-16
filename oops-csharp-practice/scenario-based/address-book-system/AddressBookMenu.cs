@@ -184,6 +184,38 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
             }
         }
 
+        public void StartUC10()
+        {
+            Console.WriteLine("Count contacts by:");
+            Console.WriteLine("1. City");
+            Console.WriteLine("2. State");
+            Console.Write("Enter choice: ");
+
+            if (!int.TryParse(Console.ReadLine(), out int choice))
+            {
+                Console.WriteLine("Invalid input");
+                return;
+            }
+
+            switch (choice)
+            {
+                case 1:
+                    Console.Write("Enter City: ");
+                    systemUtil.CountByCity(Console.ReadLine().Trim());
+                    break;
+
+                case 2:
+                    Console.Write("Enter State: ");
+                    systemUtil.CountByState(Console.ReadLine().Trim());
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid choice");
+                    break;
+            }
+        }
+
+
         // Input Helper
         private Contact TakeInput(bool checkDuplicate)
         {

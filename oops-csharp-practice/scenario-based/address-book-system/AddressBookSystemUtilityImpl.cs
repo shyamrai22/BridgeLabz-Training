@@ -137,6 +137,38 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
             }
             return -1;
         }
+
+        public void CountByCity(string city)
+        {
+            int pos = FindIndex(cities, cityIndex, city);
+
+            if (pos == -1)
+            {
+                Console.WriteLine("No contacts found in this city.");
+                return;
+            }
+
+            Console.WriteLine(
+                $"Number of contacts in city '{city}': {cityCounts[pos]}"
+            );
+        }
+
+        public void CountByState(string state)
+        {
+            int pos = FindIndex(states, stateIndex, state);
+
+            if (pos == -1)
+            {
+                Console.WriteLine("No contacts found in this state.");
+                return;
+            }
+
+            Console.WriteLine(
+                $"Number of contacts in state '{state}': {stateCounts[pos]}"
+            );
+        }
+
+
     }
 }
 

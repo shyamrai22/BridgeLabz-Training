@@ -52,10 +52,21 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
         {
             Email = email;
         }
-
         public override string ToString()
         {
             return $"{FirstName} {LastName} | {City}, {State}, {Zip} | {PhoneNumber} | {Email}";
+        }
+        public override bool Equals(Object obj) 
+        {
+            if(this == obj) return true;
+
+            if (obj == null || GetType() != obj.GetType())
+                return false;
+
+            Contact other = (Contact)obj;
+
+            return FirstName.Equals(other.FirstName, StringComparison.OrdinalIgnoreCase)
+            && LastName.Equals(other.LastName, StringComparison.OrdinalIgnoreCase);
         }
     }
 }

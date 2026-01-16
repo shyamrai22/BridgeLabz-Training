@@ -14,7 +14,16 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
                 Console.WriteLine("Address book is already full");
                 return;
             }
+            for(int i=0; i<AddressBookIndex; i++)
+            {
+                if (AddressBook[i].Equals(contact))
+                {
+                    Console.WriteLine("Contact already exists...");
+                    return;
+                }
+            }
             AddressBook[AddressBookIndex++] = contact;
+            Console.WriteLine("Contact Added Successfully!");
         }
 
         public Contact GetContact(string name)
@@ -50,6 +59,18 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
 
                     return true;
                 }
+            }
+            return false;
+        }
+
+        public bool isDuplicateContact(string firstName, string lastName)
+        {
+            for (int i = 0; i < AddressBookIndex; i++)
+            {
+                if (AddressBook[i].FirstName.Equals(firstName,StringComparison.OrdinalIgnoreCase) && AddressBook[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                {
+                    return true;
+                } 
             }
             return false;
         }

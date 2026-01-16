@@ -4,13 +4,13 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
 {
     class AddressBookMenu
     {
-        private AddressBookSystem addressBookSystem;
+        private AddressBookSystemUtilityImpl addressBookSystem;
         private IAddressBook AddressBookService; // currently selected book
 
         // Constructor → single shared instance
         public AddressBookMenu()
         {
-            addressBookSystem = new AddressBookSystem();
+            addressBookSystem = new AddressBookSystemUtilityImpl();
             AddressBookService = null; // selected later
         }
 
@@ -251,6 +251,100 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
                 Console.WriteLine("Address Book already exists!");
 
             addressBookSystem.ShowAddressBooks();
+        }
+
+        // adding multiple contacts in an address book with a check for duplicate entries
+        public void StartF()
+        {
+            addressBookSystem.ShowAddressBooks();
+            Console.WriteLine("Enter the name of the address book to select: ");
+            string name = Console.ReadLine().Trim();
+            AddressBookService = addressBookSystem.GetAddressBook(name);
+
+            if(AddressBookService == null)
+            {
+                Console.WriteLine("Address book not found...");
+            }
+            else
+            {
+                Console.WriteLine($"{name} address book selected");
+            }
+
+                bool exit = false;
+            while (!exit)
+            {
+                Console.WriteLine("Do you want to add a contact ");
+                Console.WriteLine("1. Yes");
+                Console.WriteLine("2. No");
+                Console.Write("Enter your choice --> ");
+                int choice = int.Parse(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        // calling AddContact() from utility
+                        Console.WriteLine("Enter Contact Details");
+                        Console.WriteLine("----------------------");
+
+                        Console.Write("First Name: ");
+                        string firstName = Console.ReadLine().Trim();
+
+                        Console.Write("Last Name: ");
+                        string lastName = Console.ReadLine().Trim();
+                        // added a check to validate name is unique before asking for other details
+                        if(AddressBookService.isDuplicateContact(firstName, lastName))
+                        {
+                            Console.WriteLine("Contact with similar name already exists in address book");
+                            continue;
+                        }
+
+                        Console.Write("Address: ");
+                        string address = Console.ReadLine();
+
+                        Console.Write("City: ");
+                        string city = Console.ReadLine();
+
+                        Console.Write("State: ");
+                        string state = Console.ReadLine();
+
+                        Console.Write("Zip: ");
+                        string zip = Console.ReadLine();
+                        if (zip.Length != 6)
+                        {
+                            Console.WriteLine("Invalid zip code entered!");
+                            continue;
+                        }
+
+
+                        Console.Write("Phone Number: ");
+                        string phoneNumber = Console.ReadLine();
+                        if (phoneNumber.Length != 10)
+                        {
+                            Console.WriteLine("Invalid phone number entered!");
+                            continue;
+                        }
+
+                        Console.Write("Email: ");
+                        string email = Console.ReadLine();
+
+                        // creating a Contact object
+                        Contact contact = new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email);
+                        AddressBookService.AddContact(contact);
+
+                        Console.WriteLine(contact); // calls Contact.ToString()
+                        break;
+
+                    case 2:
+                        exit = true;
+                        Console.WriteLine("Exiting...");
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid choice");
+                        break;
+                }
+
+                
+            }
         }
 
     }

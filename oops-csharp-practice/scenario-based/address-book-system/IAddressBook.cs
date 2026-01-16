@@ -5,5 +5,6 @@
         void AddContact(Contact contact);
         bool DeleteContact(Contact contact);
         Contact GetContact(string name);
+        bool isDuplicateContact(string firstName, string lastName);
     }
 }

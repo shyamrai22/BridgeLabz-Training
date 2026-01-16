@@ -2,9 +2,10 @@
 {
     interface IAddressBook
     {
-        void AddContact(Contact contact);
-        bool DeleteContact(Contact contact);
-        Contact GetContact(string name);
-        bool isDuplicateContact(string firstName, string lastName);
+        void AddContact(AddressBookSystem book, Contact contact);
+        Contact GetContact(AddressBookSystem book, string name);
+        bool DeleteContact(AddressBookSystem book, Contact contact);
+        bool IsDuplicateContact(AddressBookSystem book, string firstName, string lastName);
+        void PrintFrom(AddressBookSystem book, string location);
     }
 }

@@ -4,78 +4,76 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
 {
     class AddressBookUtilityImpl : IAddressBook
     {
-        private Contact[] AddressBook = new Contact[10];
-        int AddressBookIndex = 0;
-
-        public void AddContact(Contact contact)
+        public void AddContact(AddressBookSystem book, Contact contact)
         {
-            if (AddressBookIndex >= AddressBook.Length)
+            if (book.ContactIndex >= book.Contacts.Length)
             {
-                Console.WriteLine("Address book is already full");
+                Console.WriteLine("Address Book is full");
                 return;
             }
-            for(int i=0; i<AddressBookIndex; i++)
+
+            for (int i = 0; i < book.ContactIndex; i++)
             {
-                if (AddressBook[i].Equals(contact))
+                if (book.Contacts[i].Equals(contact))
                 {
-                    Console.WriteLine("Contact already exists...");
+                    Console.WriteLine("Duplicate contact found");
                     return;
                 }
             }
-            AddressBook[AddressBookIndex++] = contact;
-            Console.WriteLine("Contact Added Successfully!");
+
+            book.Contacts[book.ContactIndex++] = contact;
         }
 
-        public Contact GetContact(string name)
+        public Contact GetContact(AddressBookSystem book, string name)
         {
-            for(int i = 0; i < AddressBookIndex; i++)
+            for (int i = 0; i < book.ContactIndex; i++)
             {
-                if ($"{AddressBook[i].FirstName} {AddressBook[i].LastName}".Trim().Equals(name.Trim(),StringComparison.OrdinalIgnoreCase))
-                {
-                    return AddressBook[i];
-                }
+                string fullName =
+                    $"{book.Contacts[i].FirstName} {book.Contacts[i].LastName}".Trim();
+
+                if (fullName.Equals(name.Trim(), StringComparison.OrdinalIgnoreCase))
+                    return book.Contacts[i];
             }
             return null;
         }
 
-        public bool DeleteContact(Contact contact)
+        public bool DeleteContact(AddressBookSystem book, Contact contact)
         {
-            for (int i = 0; i < AddressBookIndex; i++)
+            for (int i = 0; i < book.ContactIndex; i++)
             {
-                string fullName =
-                    $"{AddressBook[i].FirstName} {AddressBook[i].LastName}".Trim();
-
-                string enteredName = $"{contact.FirstName} {contact.LastName}".Trim();
-
-                if (fullName.Equals(enteredName, StringComparison.OrdinalIgnoreCase))
+                if (book.Contacts[i].Equals(contact))
                 {
-                    for (int j = i; j < AddressBookIndex - 1; j++)
-                    {
-                        AddressBook[j] = AddressBook[j + 1];
-                    }
+                    for (int j = i; j < book.ContactIndex - 1; j++)
+                        book.Contacts[j] = book.Contacts[j + 1];
 
-                    AddressBook[AddressBookIndex - 1] = null;
-                    AddressBookIndex--;
-
+                    book.Contacts[--book.ContactIndex] = null;
                     return true;
                 }
             }
             return false;
         }
 
-        public bool isDuplicateContact(string firstName, string lastName)
+        public bool IsDuplicateContact(AddressBookSystem book, string firstName, string lastName)
         {
-            for (int i = 0; i < AddressBookIndex; i++)
+            for (int i = 0; i < book.ContactIndex; i++)
             {
-                if (AddressBook[i].FirstName.Equals(firstName,StringComparison.OrdinalIgnoreCase) && AddressBook[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
-                {
+                if (book.Contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase)
+                 && book.Contacts[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
                     return true;
-                } 
             }
             return false;
         }
 
-
-
+        public void PrintFrom(AddressBookSystem book, string location)
+        {
+            for (int i = 0; i < book.ContactIndex; i++)
+            {
+                if (book.Contacts[i].City.Equals(location, StringComparison.OrdinalIgnoreCase)
+                 || book.Contacts[i].State.Equals(location, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine(book.Contacts[i]);
+                }
+            }
+        }
     }
 }

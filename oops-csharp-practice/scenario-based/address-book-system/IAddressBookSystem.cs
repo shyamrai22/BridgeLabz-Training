@@ -3,10 +3,9 @@
     interface IAddressBookSystem
     {
         bool AddAddressBook(string name);
-
-        AddressBookUtilityImpl GetAddressBook(string name);
-
+        AddressBookSystem GetAddressBook(string name);
         void ShowAddressBooks();
-
+        AddressBookSystem GetByIndex(int index);
+        int Count { get; }
     }
 }

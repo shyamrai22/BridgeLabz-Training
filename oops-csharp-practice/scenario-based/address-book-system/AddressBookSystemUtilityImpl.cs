@@ -4,53 +4,53 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
 {
     class AddressBookSystemUtilityImpl : IAddressBookSystem
     {
-        private string[] addressBookNames = new string[10];
-        private AddressBookUtilityImpl[] addressBooks = new AddressBookUtilityImpl[10];
-        private int count = 0;
+        private AddressBookSystem[] books;
+        private int count;
+
+        public int Count => count;
+
+        public AddressBookSystemUtilityImpl(int capacity = 5)
+        {
+            books = new AddressBookSystem[capacity];
+            count = 0;
+        }
 
         public bool AddAddressBook(string name)
         {
-            if (count >= addressBooks.Length)
-            {
-                Console.WriteLine("Address Book limit reached");
-                return false;
-            }
+            if (count >= books.Length) return false;
 
-            // ensure unique names
             for (int i = 0; i < count; i++)
-            {
-                if (addressBookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
-                {
+                if (books[i].Name.Equals(name, StringComparison.OrdinalIgnoreCase))
                     return false;
-                }
-            }
 
-            addressBookNames[count] = name;
-            addressBooks[count] = new AddressBookUtilityImpl();
-            count++;
+            books[count++] = new AddressBookSystem(name, 10);
             return true;
         }
 
-        public AddressBookUtilityImpl GetAddressBook(string name)
+        public AddressBookSystem GetAddressBook(string name)
         {
             for (int i = 0; i < count; i++)
-            {
-                if (addressBookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
-                {
-                    return addressBooks[i];
-                }
-            }
+                if (books[i].Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+                    return books[i];
             return null;
+        }
+
+        public AddressBookSystem GetByIndex(int index)
+        {
+            if (index < 0 || index >= count) return null;
+            return books[index];
         }
 
         public void ShowAddressBooks()
         {
-            Console.WriteLine("Available Address Books:");
-            for (int i = 0; i < count; i++)
+            if (count == 0)
             {
-                Console.WriteLine($"{i + 1}. {addressBookNames[i]}");
+                Console.WriteLine("No Address Books available.");
+                return;
             }
-        }
 
+            for (int i = 0; i < count; i++)
+                Console.WriteLine($"{i + 1}. {books[i].Name}");
+        }
     }
 }

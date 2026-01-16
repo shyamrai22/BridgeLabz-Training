@@ -1,6 +1,5 @@
 ﻿using System;
 
-// uc-01
 namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_system
 {
     class Contact
@@ -14,59 +13,48 @@ namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_syste
         public string PhoneNumber { get; private set; }
         public string Email { get; private set; }
 
-        public Contact(string FirstName, string Lastname, string Address, string City,
-                       string State, string Zip, string PhoneNumber, string Email)
+        public Contact(
+            string firstName,
+            string lastName,
+            string address,
+            string city,
+            string state,
+            string zip,
+            string phoneNumber,
+            string email)
         {
-            this.FirstName = FirstName;
-            this.LastName = Lastname;
-            this.Address = Address;
-            this.City = City;
-            this.State = State;
-            this.Zip = Zip;
-            this.PhoneNumber = PhoneNumber;
-            this.Email = Email;
-        }
-
-        // update methods
-        public void UpdateAddress(string address)
-        {
+            FirstName = firstName;
+            LastName = lastName;
             Address = address;
-        }
-        public void UpdateCity(string city)
-        {
             City = city;
-        }
-        public void UpdateState(string state)
-        {
             State = state;
-        }
-        public void UpdateZip(string zip)
-        {
             Zip = zip;
-        }
-        public void UpdatePhoneNumber(string phone)
-        {
-            PhoneNumber = phone;
-        }
-        public void UpdateEmail(string email)
-        {
+            PhoneNumber = phoneNumber;
             Email = email;
         }
+
+        // Update methods (UC-03)
+        public void UpdateAddress(string value) => Address = value;
+        public void UpdateCity(string value) => City = value;
+        public void UpdateState(string value) => State = value;
+        public void UpdateZip(string value) => Zip = value;
+        public void UpdatePhone(string value) => PhoneNumber = value;
+        public void UpdateEmail(string value) => Email = value;
+
         public override string ToString()
         {
             return $"{FirstName} {LastName} | {City}, {State}, {Zip} | {PhoneNumber} | {Email}";
         }
-        public override bool Equals(Object obj) 
-        {
-            if(this == obj) return true;
 
-            if (obj == null || GetType() != obj.GetType())
-                return false;
+        // UC-07 Duplicate check
+        public override bool Equals(object obj)
+        {
+            if (this == obj) return true;
+            if (obj == null || GetType() != obj.GetType()) return false;
 
             Contact other = (Contact)obj;
-
             return FirstName.Equals(other.FirstName, StringComparison.OrdinalIgnoreCase)
-            && LastName.Equals(other.LastName, StringComparison.OrdinalIgnoreCase);
+                && LastName.Equals(other.LastName, StringComparison.OrdinalIgnoreCase);
         }
     }
 }

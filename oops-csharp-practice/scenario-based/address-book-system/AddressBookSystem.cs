@@ -1,52 +1,16 @@
-﻿using BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_system;
-
-class AddressBookSystem : IAddressBookSystem
+﻿namespace BridgeLabzTraining.oops_csharp_buddy.scenario_based.address_book_system
 {
-    private string[] addressBookNames = new string[10];
-    private AddressBookUtilityImpl[] addressBooks = new AddressBookUtilityImpl[10];
-    private int count = 0;
-
-    public bool AddAddressBook(string name)
+    class AddressBookSystem
     {
-        if (count >= addressBooks.Length)
-        {
-            Console.WriteLine("Address Book limit reached");
-            return false;
-        }
+        public string Name { get; private set; }
+        public Contact[] Contacts { get; private set; }
+        public int ContactIndex { get; set; }
 
-        // ensure unique names
-        for (int i = 0; i < count; i++)
+        public AddressBookSystem(string name, int capacity)
         {
-            if (addressBookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
-            {
-                return false;
-            }
-        }
-
-        addressBookNames[count] = name;
-        addressBooks[count] = new AddressBookUtilityImpl();
-        count++;
-        return true;
-    }
-
-    public AddressBookUtilityImpl GetAddressBook(string name)
-    {
-        for (int i = 0; i < count; i++)
-        {
-            if (addressBookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
-            {
-                return addressBooks[i];
-            }
-        }
-        return null;
-    }
-
-    public void ShowAddressBooks()
-    {
-        Console.WriteLine("Available Address Books:");
-        for (int i = 0; i < count; i++)
-        {
-            Console.WriteLine($"{i + 1}. {addressBookNames[i]}");
+            Name = name;
+            Contacts = new Contact[capacity];
+            ContactIndex = 0;
         }
     }
 }

@@ -1,0 +1,7 @@
+# Ignore build output (all projects)
+**/bin/
+**/obj/
+
+# Ignore C# project & solution files (learning repo)
+**/*.csproj
+**/*.sln

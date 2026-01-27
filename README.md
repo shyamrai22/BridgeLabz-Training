@@ -541,3 +541,249 @@
 - Solved assignment questions on:
   - Runtime Analysis
   - Big-O Notation
+
+### 🔮 **Upcoming Learning**
+
+- **Generics**
+
+---
+
+  ## 📅 **Day 22**
+
+**Date:** 14-01-2026 (Wednesday)
+
+### 📘 **What I Learned**
+
+- Learned a **new way of solving problems based on use cases**
+- Understood how to **commit solutions on GitHub** following use-case-driven approaches
+- Learned how structuring code around use cases improves clarity and maintainability
+
+### 📝 **Assignment for the Day**
+
+- Solved a **scenario-based Address Book problem**
+- Applied use-case-based logic while implementing the solution
+- Practiced committing structured solutions to GitHub
+
+### 🔮 **Upcoming Learning**
+
+- **Generics**
+
+---
+
+## 📅 **Day 23**
+
+**Date:** 15-01-2026 (Thursday)
+
+### 📘 **What I Learned**
+
+- Learned the practical **uses of core DSA concepts**:
+  - Stack
+  - Queue
+  - Linked List
+  - Dictionary
+  - Searching
+  - Sorting
+- Understood how these data structures are selected based on **problem requirements**
+- Improved clarity on applying DSA concepts in real-world scenarios
+
+### 📝 **Assignment for the Day**
+
+- Solved a **scenario-based question**:
+  - Browser Buddy
+- Implemented the solution using:
+  - **Doubly Linked List**
+  - **Stack**
+- Strengthened understanding of combining multiple data structures in one problem
+
+### 🔮 **Upcoming Learning**
+
+- **Generics**
+
+---
+
+## 📅 **Day 24**
+
+**Date:** 16-01-2026 (Friday)
+
+### 📘 **What I Learned**
+
+- Learned the practical **uses of core DSA concepts**:
+  - Stack
+  - Queue
+  - Linked List
+  - Dictionary
+  - Searching
+  - Sorting
+- Understood how these data structures are selected based on **problem requirements**
+- Improved clarity on applying DSA concepts in real-world scenarios
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - Traffic Manager
+  - Bookshelf – Library Organization Story
+- Applied appropriate data structures based on use cases
+- Strengthened real-world problem-solving skills using DSA
+
+### 🔮 **Upcoming Learning**
+
+- **Generics**
+
+---
+
+## 📅 **Day 25**
+
+**Date:** 17-01-2026 (Saturday)
+
+### 📘 **What I Learned**
+
+- Learned the practical **uses of core DSA concepts**:
+  - Stack
+  - Queue
+  - Linked List
+  - Dictionary
+  - Searching
+  - Sorting
+- Understood how these data structures are selected based on **problem requirements**
+- Improved clarity on applying DSA concepts in real-world scenarios
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - FlashDealz – Product Sorting by Discount (**Quick Sort**)
+  - Fitness App Tracking using **Bubble Sort**
+- Applied different sorting algorithms based on problem constraints
+- Strengthened understanding of algorithm selection and efficiency
+
+### 🔮 **Upcoming Learning**
+
+- **Generics**
+
+- --
+## 📅 **Day 26**
+
+**Date:** 19-01-2026 (Monday)
+
+### 📘 **What I Learned**
+
+- Learned the **basics of Generics** in C#
+- Understood the **use cases of Generics** and how they improve code reusability
+- Learned how Generics help in writing **type-safe and flexible code**
+- Gained clarity on how Generics reduce redundancy and improve maintainability
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - **Parcel Tracker**
+    - Implemented using **Singly Linked List**
+  - **Exam Proctor**
+    - Implemented using **Stack**, **HashMap**, and **Functions**
+- Solved the **assignment problems on Generics**
+- Strengthened understanding of applying Generics in real-world scenarios
+
+### 🔮 **Upcoming Learning**
+
+- **Collections**
+
+---
+
+## 📅 **Day 27**
+
+**Date:** 20-01-2026 (Tuesday)
+
+### 📘 **What I Learned**
+
+- Learned the **basics of Collections** in C#
+- Understood the **use cases of Collections** and when to use them
+- Learned how Collections are used to manage dynamic data efficiently
+- Gained clarity on implementing Collections in real-world C# programs
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - Sorting **Aadhar Numbers using Radix Sort**
+  - **Password Checker Simulator**
+- Solved the **assignment problems on Collections**
+- Practiced combining **Collections with algorithms** for efficient solutions
+
+### 🔮 **Upcoming Learning**
+
+**C# Streams**
+
+---
+## 📅 **Day 28**
+
+**Date:** 21-01-2026 (Wednesday)
+
+### 📘 **What I Learned**
+
+- Learned the **introduction to C# Streams**
+- Understood the **use cases of C# Streams** for reading and writing data
+- Learned how streams help in handling **files and data flow efficiently**
+- Gained clarity on applying streams in real-world applications
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - Result & Rank Sheet Generator
+  - Smart Checkout – Supermarket Billing Queue
+- Solved the **assignment questions on C# Streams**
+- Practiced using streams for structured data processing
+
+### 🔮 **Upcoming Learning**
+
+- **Exception Handling in C#**
+
+---
+
+## 📅 **Day 29**
+
+**Date:** 22-01-2026 (Thursday)
+
+### 📘 **What I Learned**
+
+- Learned about **Exception Handling in C#**
+- Understood the importance of handling runtime errors gracefully
+- Learned different exception handling constructs:
+  - `try`
+  - `catch`
+  - `finally`
+  - `throw`
+- Gained insight into writing **robust and fault-tolerant code**
+
+### 📝 **Assignment for the Day**
+
+- Solved a **scenario-based question**:
+  - Ambulance Route Emergency Patient Navigator  
+    - Implemented using **Circular Linked List**
+- Solved the **assignment questions on Exception Handling**
+- Strengthened understanding of error handling in real-life scenarios
+
+### 🔮 **Upcoming Learning**
+
+- **Regex**
+- **Unit Testing**
+
+---
+
+## 📅 **Day 30**
+
+**Date:** 23-01-2026 (Friday)
+
+### 📘 **What I Learned**
+
+- Learned about **Regular Expressions (Regex)**
+- Understood how Regex is used for **pattern matching and validation**
+- Learned about **Unit Testing**
+- Understood the importance of testing individual components of code
+
+### 📝 **Assignment for the Day**
+
+- Completed and submitted the **assignments provided on**:
+  - **Regex**
+  - **Unit Testing**
+- Practiced validating inputs and testing code functionality
+
+### 🔮 **Upcoming Learning**
+
+- **Advanced Testing & Validation Techniques**

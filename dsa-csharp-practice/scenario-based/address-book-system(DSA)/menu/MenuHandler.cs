@@ -1,13 +1,15 @@
 using System;
 using AddressBookSystem.model;
 using AddressBookSystem.ds;
+using AddressBookSystem.interface_layer;
 
 namespace AddressBookSystem.menu
 {
   public class MenuHandler
   {
-    private AddressBookManager system = new AddressBookManager();
+    private IAddressBookManager system = new AddressBookManager();
     private AddressBook currentBook;
+
 
     public void Start()
     {

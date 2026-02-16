@@ -1,8 +1,11 @@
 using AddressBookSystem.ds;
+using AddressBookSystem.interface_layer;
+
 
 namespace AddressBookSystem.model
 {
-  public class AddressBookManager
+  public class AddressBookManager : IAddressBookManager
+
   {
     private MyDictionary<string, AddressBook> addressBooks;
 

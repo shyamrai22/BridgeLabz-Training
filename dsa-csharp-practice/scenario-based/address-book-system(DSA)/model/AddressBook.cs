@@ -1,10 +1,12 @@
 using AddressBookSystem.ds;
+using AddressBookSystem.interface_layer;
 
 namespace AddressBookSystem.model
 {
 
 
-  public class AddressBook
+  public class AddressBook : IAddressBook
+
   {
     private MyDictionary<string, MyList<Contact>> cityIndex;
     private MyDictionary<string, MyList<Contact>> stateIndex;

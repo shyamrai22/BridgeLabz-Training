@@ -10,10 +10,11 @@ namespace TechVille.Model
       this.premiumCharge = premiumCharge;
     }
 
-    public override void Register(Citizen citizen)
+    public override void Register(Citizen citizen, int priorityLevel)
     {
-      base.Register(citizen);  // call parent method
-      Console.WriteLine($"Premium benefits activated. Extra charge: {premiumCharge}");
+      base.Register(citizen, priorityLevel);
+      Console.WriteLine("Premium fast-track processing enabled.");
     }
+
   }
 }

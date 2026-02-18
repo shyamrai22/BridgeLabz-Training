@@ -14,15 +14,39 @@ namespace TechVille.Model
 
     public CityService(string serviceName, double baseCost)
     {
-      this.serviceName = serviceName;   // using this
+      this.serviceName = serviceName;
       this.baseCost = baseCost;
-
-      totalServices++;  // static tracking
+      totalServices++;
     }
 
     public virtual void Register(Citizen citizen)
     {
       Console.WriteLine($"{citizen.Name} registered for {serviceName}.");
+    }
+
+    // 🔹 Method Overloading
+    public virtual void Register(Citizen citizen, int priorityLevel)
+    {
+      Console.WriteLine($"{citizen.Name} registered for {serviceName} with priority {priorityLevel}.");
+    }
+
+    public override string ToString()
+    {
+      return $"Service: {serviceName} | Cost: {baseCost}";
+    }
+
+    public override bool Equals(object obj)
+    {
+      if (obj is CityService other)
+      {
+        return this.serviceName == other.serviceName;
+      }
+      return false;
+    }
+
+    public override int GetHashCode()
+    {
+      return serviceName.GetHashCode();
     }
 
     public static void DisplayTotalServices()

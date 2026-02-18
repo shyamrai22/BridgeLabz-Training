@@ -165,6 +165,12 @@ namespace TechVille.Menu
 
       service.Register(citizen);
 
+      if (service is PremiumHealthcareService)
+      {
+        service.Register(citizen, 1);  // overloaded version
+      }
+
+
       // Using 'is' operator (Module 7 concept)
       if (service is PremiumHealthcareService)
       {

@@ -1,8 +1,11 @@
+using TechVille.Interface;
 using TechVille.Model;
+using TechVille.Utility;
+
 
 namespace TechVille.Service
 {
-  public class CitizenManager
+  public class CitizenManager : ICitizenManager
   {
     private Citizen[] citizens = new Citizen[100];
     private int[] citizenIds = new int[100];
@@ -33,7 +36,19 @@ namespace TechVille.Service
       Console.Write("Enter Residency Years: ");
       int years = Convert.ToInt32(Console.ReadLine());
 
-      Citizen citizen = new Citizen(id, name, age, income, years);
+      Console.Write("Enter Email: ");
+      string email = Console.ReadLine();
+
+      if (!ProfileUtility.ValidateEmail(email))
+      {
+        Console.WriteLine("Invalid email format.");
+        return;
+      }
+
+      name = ProfileUtility.FormatName(name);
+
+      Citizen citizen = new Citizen(id, name, age, income, years, email);
+
 
       CalculateEligibility(citizen);
 
@@ -134,6 +149,43 @@ namespace TechVille.Service
       Console.WriteLine($"Eligibility Score: {citizen.EligibilityScore:F2}");
       Console.WriteLine($"Service Package: {citizen.ServicePackage}");
     }
+
+    public void SearchByName(string name)
+    {
+      bool found = false;
+
+      for (int i = 0; i < count; i++)
+      {
+        if (ProfileUtility.NameContains(citizens[i].Name, name))
+        {
+          DisplayCitizen(citizens[i]);
+          found = true;
+        }
+      }
+
+      if (!found)
+        Console.WriteLine("No matching citizens found.");
+    }
+
+    public void UpdateIncome(int id, double newIncome)
+    {
+      Citizen citizen = SearchCitizen(id);
+
+      if (citizen == null)
+      {
+        Console.WriteLine("Citizen not found.");
+        return;
+      }
+
+      ModifyIncome(citizen, newIncome);
+      Console.WriteLine("Income updated successfully.");
+    }
+
+    private void ModifyIncome(Citizen citizen, double income)
+    {
+      citizen.Income = income;
+    }
+
 
 
   }

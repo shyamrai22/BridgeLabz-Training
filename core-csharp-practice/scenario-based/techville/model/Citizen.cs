@@ -9,21 +9,26 @@ namespace TechVille.Model
     public double EligibilityScore { get; set; }
     public string ServicePackage { get; set; }
     public int CitizenId { get; set; }
+    public string Email { get; set; }
 
 
-    public Citizen(int id, string name, int age, double income, int years)
+
+    public Citizen(int id, string name, int age, double income, int years, string email)
     {
       CitizenId = id;
       Name = name;
       Age = age;
       Income = income;
       ResidencyYears = years;
+      Email = email;
     }
+
 
 
     public override string ToString()
     {
-      return $"{Name} | {Age} | {ResidencyYears}";
+      return $"{CitizenId} | {Name} | {Age} | {ResidencyYears} | {Email}";
     }
+
   }
 }

@@ -1,14 +1,26 @@
 namespace TechVille.Model
 {
-  public class HealthcareService : Service
+  public class HealthcareService : CityService
   {
-    public HealthcareService() : base("Healthcare", 500)
+    private bool includesInsurance;
+
+    public HealthcareService()
+        : base("Healthcare", 500)
     {
+      this.includesInsurance = true;   // using 'this'
     }
 
     public override void Register(Citizen citizen)
     {
-      Console.WriteLine($"Healthcare registration complete for {citizen.Name}.");
+      base.Register(citizen);  // call parent logic first
+
+      Console.WriteLine(
+          $"Healthcare registration complete for {citizen.Name}.");
+
+      if (includesInsurance)
+      {
+        Console.WriteLine("Insurance coverage included.");
+      }
     }
   }
 }

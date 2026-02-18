@@ -20,7 +20,8 @@ namespace TechVille.Menu
           continue;
         }
 
-        HandleChoice(choice);
+        if (!HandleChoice(choice))
+          break;
       }
     }
 
@@ -35,11 +36,13 @@ namespace TechVille.Menu
       Console.WriteLine("6. Update Citizen Income");
       Console.WriteLine("7. Register for Healthcare Service");
       Console.WriteLine("8. Register for Education Service");
-      Console.WriteLine("9. Exit");
+      Console.WriteLine("9. Register for Premium Healthcare");
+      Console.WriteLine("10. Display Total Services Created");
+      Console.WriteLine("11. Exit");
       Console.Write("Enter choice: ");
     }
 
-    private void HandleChoice(int choice)
+    private bool HandleChoice(int choice)
     {
       switch (choice)
       {
@@ -68,22 +71,25 @@ namespace TechVille.Menu
           break;
 
         case 7:
-          RegisterForService(new HealthcareService());
-          break;
-
         case 8:
-          RegisterForService(new EducationService());
+        case 9:
+          HandleServiceRegistration(choice - 6);
           break;
 
-        case 9:
-          Console.WriteLine("Exiting system...");
-          Environment.Exit(0);
+        case 10:
+          CityService.DisplayTotalServices();
           break;
+
+        case 11:
+          Console.WriteLine("Exiting system...");
+          return false;
 
         default:
           Console.WriteLine("Invalid choice.");
           break;
       }
+
+      return true;
     }
 
     private void SearchById()
@@ -132,26 +138,37 @@ namespace TechVille.Menu
       }
     }
 
-    private void RegisterForService(TechVille.Model.Service service)
-
+    private void HandleServiceRegistration(int serviceChoice)
     {
       Console.Write("Enter Citizen ID: ");
-      if (int.TryParse(Console.ReadLine(), out int id))
-      {
-        Citizen citizen = manager.SearchCitizen(id);
-
-        if (citizen != null)
-        {
-          service.Register(citizen);
-        }
-        else
-        {
-          Console.WriteLine("Citizen not found.");
-        }
-      }
-      else
+      if (!int.TryParse(Console.ReadLine(), out int id))
       {
         Console.WriteLine("Invalid ID.");
+        return;
+      }
+
+      Citizen citizen = manager.SearchCitizen(id);
+
+      if (citizen == null)
+      {
+        Console.WriteLine("Citizen not found.");
+        return;
+      }
+
+      CityService service = ServiceFactory.CreateService(serviceChoice);
+
+      if (service == null)
+      {
+        Console.WriteLine("Invalid service selection.");
+        return;
+      }
+
+      service.Register(citizen);
+
+      // Using 'is' operator (Module 7 concept)
+      if (service is PremiumHealthcareService)
+      {
+        Console.WriteLine("Premium healthcare benefits applied.");
       }
     }
   }

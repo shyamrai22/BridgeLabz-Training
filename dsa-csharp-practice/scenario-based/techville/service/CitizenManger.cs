@@ -2,6 +2,7 @@ using TechVille.Interface;
 using TechVille.Model;
 using TechVille.Utility;
 using TechVille.Exceptions;
+using System.Collections.Generic;
 
 namespace TechVille.Service
 {
@@ -13,6 +14,9 @@ namespace TechVille.Service
 
     private int[,] zones = new int[5, 5];
 
+    // 🔥 HashMap for O(1) lookup
+    private Dictionary<int, Citizen> citizenMap = new Dictionary<int, Citizen>();
+
     public void RegisterCitizen()
     {
       try
@@ -23,7 +27,8 @@ namespace TechVille.Service
         Console.Write("Enter Citizen ID: ");
         int id = Convert.ToInt32(Console.ReadLine());
 
-        if (IsDuplicateId(id))
+        // O(1) duplicate check
+        if (citizenMap.ContainsKey(id))
           throw new DuplicateCitizenException("Citizen ID already exists.");
 
         Console.Write("Enter Name: ");
@@ -51,10 +56,14 @@ namespace TechVille.Service
 
         Citizen citizen = new Citizen(id, name, age, income, years, email);
 
+        // Store in array (for sorting module)
         citizens[count] = citizen;
         citizenIds[count] = id;
 
-        AssignZone(); // clean separation
+        // 🔥 Store in dictionary (O(1) access)
+        citizenMap[id] = citizen;
+
+        AssignZone();
         count++;
 
         Console.WriteLine("Citizen registered successfully.");
@@ -74,13 +83,12 @@ namespace TechVille.Service
       zones[zone, sector]++;
     }
 
+    // 🔥 O(1) Search using Dictionary
     public Citizen SearchCitizen(int id)
     {
-      for (int i = 0; i < count; i++)
-      {
-        if (citizenIds[i] == id)
-          return citizens[i];
-      }
+      if (citizenMap.TryGetValue(id, out Citizen citizen))
+        return citizen;
+
       return null;
     }
 
@@ -126,11 +134,11 @@ namespace TechVille.Service
     {
       bool found = false;
 
-      for (int i = 0; i < count; i++)
+      foreach (var citizen in citizenMap.Values)
       {
-        if (ProfileUtility.NameContains(citizens[i].Name, name))
+        if (ProfileUtility.NameContains(citizen.Name, name))
         {
-          DisplayCitizen(citizens[i]);
+          DisplayCitizen(citizen);
           found = true;
         }
       }
@@ -149,18 +157,8 @@ namespace TechVille.Service
         return;
       }
 
-      citizen.UpdateIncome(newIncome);   // Encapsulated method
+      citizen.UpdateIncome(newIncome);
       Console.WriteLine("Income updated successfully.");
-    }
-
-    private bool IsDuplicateId(int id)
-    {
-      for (int i = 0; i < count; i++)
-      {
-        if (citizenIds[i] == id)
-          return true;
-      }
-      return false;
     }
   }
 }

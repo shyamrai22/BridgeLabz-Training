@@ -1,6 +1,6 @@
 namespace TechVille.Model
 {
-  public class CityService
+  public abstract class CityService
   {
     protected string serviceName;
     protected double baseCost;
@@ -19,10 +19,8 @@ namespace TechVille.Model
       totalServices++;
     }
 
-    public virtual void Register(Citizen citizen)
-    {
-      Console.WriteLine($"{citizen.Name} registered for {serviceName}.");
-    }
+    public abstract void Register(Citizen citizen);
+
 
     // 🔹 Method Overloading
     public virtual void Register(Citizen citizen, int priorityLevel)

@@ -1,26 +1,32 @@
+using TechVille.Interface;
+
 namespace TechVille.Model
 {
-  public class HealthcareService : CityService
+  public class HealthcareService : CityService, IBookable, ICancellable, ITrackable
   {
-    private bool includesInsurance;
-
     public HealthcareService()
         : base("Healthcare", 500)
     {
-      this.includesInsurance = true;   // using 'this'
     }
 
     public override void Register(Citizen citizen)
     {
-      base.Register(citizen);  // call parent logic first
+      Console.WriteLine($"{citizen.Name} registered for healthcare.");
+    }
 
-      Console.WriteLine(
-          $"Healthcare registration complete for {citizen.Name}.");
+    public void Book()
+    {
+      Console.WriteLine("Healthcare appointment booked.");
+    }
 
-      if (includesInsurance)
-      {
-        Console.WriteLine("Insurance coverage included.");
-      }
+    public void Cancel()
+    {
+      Console.WriteLine("Healthcare appointment cancelled.");
+    }
+
+    public void TrackStatus()
+    {
+      Console.WriteLine("Healthcare appointment status: Confirmed.");
     }
   }
 }

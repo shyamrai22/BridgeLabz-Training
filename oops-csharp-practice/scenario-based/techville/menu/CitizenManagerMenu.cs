@@ -155,6 +155,7 @@ namespace TechVille.Menu
         return;
       }
 
+      // Create service using factory
       CityService service = ServiceFactory.CreateService(serviceChoice);
 
       if (service == null)
@@ -163,18 +164,25 @@ namespace TechVille.Menu
         return;
       }
 
+      // Register citizen
       service.Register(citizen);
 
+      // If premium, use overloaded method
       if (service is PremiumHealthcareService)
       {
-        service.Register(citizen, 1);  // overloaded version
+        service.Register(citizen, 1);
+        Console.WriteLine("Premium healthcare benefits applied.");
       }
 
-
-      // Using 'is' operator (Module 7 concept)
-      if (service is PremiumHealthcareService)
+      // Interface-based polymorphic behavior
+      if (service is IBookable bookable)
       {
-        Console.WriteLine("Premium healthcare benefits applied.");
+        bookable.Book();
+      }
+
+      if (service is ITrackable trackable)
+      {
+        trackable.TrackStatus();
       }
     }
   }

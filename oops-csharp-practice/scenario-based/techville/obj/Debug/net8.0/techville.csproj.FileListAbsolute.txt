@@ -1,0 +1,14 @@
+D:\BridgeLabzTraining(VS code)\projects\techville\bin\Debug\net8.0\techville.exe
+D:\BridgeLabzTraining(VS code)\projects\techville\bin\Debug\net8.0\techville.deps.json
+D:\BridgeLabzTraining(VS code)\projects\techville\bin\Debug\net8.0\techville.runtimeconfig.json
+D:\BridgeLabzTraining(VS code)\projects\techville\bin\Debug\net8.0\techville.dll
+D:\BridgeLabzTraining(VS code)\projects\techville\bin\Debug\net8.0\techville.pdb
+D:\BridgeLabzTraining(VS code)\projects\techville\obj\Debug\net8.0\techville.GeneratedMSBuildEditorConfig.editorconfig
+D:\BridgeLabzTraining(VS code)\projects\techville\obj\Debug\net8.0\techville.AssemblyInfoInputs.cache
+D:\BridgeLabzTraining(VS code)\projects\techville\obj\Debug\net8.0\techville.AssemblyInfo.cs
+D:\BridgeLabzTraining(VS code)\projects\techville\obj\Debug\net8.0\techville.csproj.CoreCompileInputs.cache
+D:\BridgeLabzTraining(VS code)\projects\techville\obj\Debug\net8.0\techville.dll
+D:\BridgeLabzTraining(VS code)\projects\techville\obj\Debug\net8.0\refint\techville.dll
+D:\BridgeLabzTraining(VS code)\projects\techville\obj\Debug\net8.0\techville.pdb
+D:\BridgeLabzTraining(VS code)\projects\techville\obj\Debug\net8.0\techville.genruntimeconfig.cache
+D:\BridgeLabzTraining(VS code)\projects\techville\obj\Debug\net8.0\ref\techville.dll

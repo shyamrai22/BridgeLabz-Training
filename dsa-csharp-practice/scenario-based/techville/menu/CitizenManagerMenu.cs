@@ -12,6 +12,10 @@ namespace TechVille.Menu
     private CitizenDoublyLinkedList doublyList = new CitizenDoublyLinkedList();
     private CitizenCircularLinkedList circularList = new CitizenCircularLinkedList();
 
+    private CitizenStack undoStack = new CitizenStack();
+    private ServiceRequestQueue requestQueue = new ServiceRequestQueue();
+    private EmergencyServiceQueue emergencyQueue = new EmergencyServiceQueue();
+
     public void Start()
     {
       while (true)
@@ -57,7 +61,15 @@ namespace TechVille.Menu
       Console.WriteLine("17. Add Citizen To Circular List");
       Console.WriteLine("18. Display Circular List");
 
-      Console.WriteLine("19. Exit");
+      Console.WriteLine("\n------ Stack & Queue ------");
+      Console.WriteLine("19. Push Citizen To Undo Stack");
+      Console.WriteLine("20. Undo Last Citizen");
+      Console.WriteLine("21. Add Citizen To Service Queue");
+      Console.WriteLine("22. Process Next Service Request");
+      Console.WriteLine("23. Add Citizen To Emergency Queue");
+      Console.WriteLine("24. Process Emergency Request");
+
+      Console.WriteLine("25. Exit");
       Console.Write("Enter choice: ");
     }
 
@@ -82,21 +94,27 @@ namespace TechVille.Menu
           CityService.DisplayTotalServices();
           break;
 
-        // Singly Linked List
         case 11: AddToSinglyList(); break;
         case 12: singlyList.Display(); break;
         case 13: RemoveFromSinglyList(); break;
 
-        // Doubly Linked List
         case 14: AddToDoublyList(); break;
         case 15: doublyList.DisplayForward(); break;
         case 16: doublyList.DisplayBackward(); break;
 
-        // Circular Linked List
         case 17: AddToCircularList(); break;
         case 18: circularList.Display(); break;
 
-        case 19:
+        case 19: PushToUndoStack(); break;
+        case 20: UndoLastCitizen(); break;
+
+        case 21: AddToServiceQueue(); break;
+        case 22: ProcessServiceQueue(); break;
+
+        case 23: AddToEmergencyQueue(); break;
+        case 24: ProcessEmergencyQueue(); break;
+
+        case 25:
           Console.WriteLine("Exiting system...");
           return false;
 
@@ -108,7 +126,74 @@ namespace TechVille.Menu
       return true;
     }
 
-    // ------------------ Singly ------------------
+    // ------------------ Stack ------------------
+
+    private void PushToUndoStack()
+    {
+      Citizen citizen = GetCitizenFromInput();
+      if (citizen == null) return;
+
+      undoStack.Push(citizen);
+      Console.WriteLine("Citizen pushed to undo stack.");
+    }
+
+    private void UndoLastCitizen()
+    {
+      Citizen undone = undoStack.Pop();
+      if (undone == null)
+        Console.WriteLine("Stack is empty.");
+      else
+        Console.WriteLine($"Undo performed for: {undone}");
+    }
+
+    // ------------------ FIFO Queue ------------------
+
+    private void AddToServiceQueue()
+    {
+      Citizen citizen = GetCitizenFromInput();
+      if (citizen == null) return;
+
+      requestQueue.Enqueue(citizen);
+      Console.WriteLine("Citizen added to service queue.");
+    }
+
+    private void ProcessServiceQueue()
+    {
+      Citizen processed = requestQueue.Dequeue();
+      if (processed == null)
+        Console.WriteLine("Queue is empty.");
+      else
+        Console.WriteLine($"Processing service request for: {processed}");
+    }
+
+    // ------------------ Priority Queue ------------------
+
+    private void AddToEmergencyQueue()
+    {
+      Citizen citizen = GetCitizenFromInput();
+      if (citizen == null) return;
+
+      Console.Write("Enter Priority (1 = High, 5 = Low): ");
+      if (!int.TryParse(Console.ReadLine(), out int priority))
+      {
+        Console.WriteLine("Invalid priority.");
+        return;
+      }
+
+      emergencyQueue.Enqueue(citizen, priority);
+      Console.WriteLine("Citizen added to emergency queue.");
+    }
+
+    private void ProcessEmergencyQueue()
+    {
+      Citizen processed = emergencyQueue.Dequeue();
+      if (processed == null)
+        Console.WriteLine("Emergency queue is empty.");
+      else
+        Console.WriteLine($"Processing emergency request for: {processed}");
+    }
+
+    // ------------------ Existing Methods (Unchanged) ------------------
 
     private void AddToSinglyList()
     {
@@ -132,8 +217,6 @@ namespace TechVille.Menu
       Console.WriteLine("Removal operation completed.");
     }
 
-    // ------------------ Doubly ------------------
-
     private void AddToDoublyList()
     {
       Citizen citizen = GetCitizenFromInput();
@@ -143,8 +226,6 @@ namespace TechVille.Menu
       Console.WriteLine("Citizen added to doubly linked list.");
     }
 
-    // ------------------ Circular ------------------
-
     private void AddToCircularList()
     {
       Citizen citizen = GetCitizenFromInput();
@@ -153,8 +234,6 @@ namespace TechVille.Menu
       circularList.Insert(citizen);
       Console.WriteLine("Citizen added to circular linked list.");
     }
-
-    // ------------------ Shared Helpers ------------------
 
     private Citizen GetCitizenFromInput()
     {

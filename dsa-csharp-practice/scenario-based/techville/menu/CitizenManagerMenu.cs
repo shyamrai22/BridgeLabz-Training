@@ -7,7 +7,10 @@ namespace TechVille.Menu
   public class CitizenManagerMenu
   {
     private ICitizenManager manager = new CitizenManager();
-    private CitizenLinkedList linkedList = new CitizenLinkedList();
+
+    private CitizenLinkedList singlyList = new CitizenLinkedList();
+    private CitizenDoublyLinkedList doublyList = new CitizenDoublyLinkedList();
+    private CitizenCircularLinkedList circularList = new CitizenCircularLinkedList();
 
     public void Start()
     {
@@ -40,12 +43,21 @@ namespace TechVille.Menu
       Console.WriteLine("9. Register for Premium Healthcare");
       Console.WriteLine("10. Display Total Services Created");
 
-      Console.WriteLine("------ Linked List Operations ------");
-      Console.WriteLine("11. Add Citizen To Linked Queue");
-      Console.WriteLine("12. Display Linked Queue");
-      Console.WriteLine("13. Remove Citizen From Linked Queue");
+      Console.WriteLine("\n------ Singly Linked List ------");
+      Console.WriteLine("11. Add Citizen To Singly List");
+      Console.WriteLine("12. Display Singly List");
+      Console.WriteLine("13. Remove Citizen From Singly List");
 
-      Console.WriteLine("14. Exit");
+      Console.WriteLine("\n------ Doubly Linked List ------");
+      Console.WriteLine("14. Add Citizen To Doubly List");
+      Console.WriteLine("15. Display Doubly List Forward");
+      Console.WriteLine("16. Display Doubly List Backward");
+
+      Console.WriteLine("\n------ Circular Linked List ------");
+      Console.WriteLine("17. Add Citizen To Circular List");
+      Console.WriteLine("18. Display Circular List");
+
+      Console.WriteLine("19. Exit");
       Console.Write("Enter choice: ");
     }
 
@@ -53,29 +65,12 @@ namespace TechVille.Menu
     {
       switch (choice)
       {
-        case 1:
-          manager.RegisterCitizen();
-          break;
-
-        case 2:
-          SearchById();
-          break;
-
-        case 3:
-          manager.SortCitizenIds();
-          break;
-
-        case 4:
-          manager.DisplayZones();
-          break;
-
-        case 5:
-          SearchByName();
-          break;
-
-        case 6:
-          UpdateIncome();
-          break;
+        case 1: manager.RegisterCitizen(); break;
+        case 2: SearchById(); break;
+        case 3: manager.SortCitizenIds(); break;
+        case 4: manager.DisplayZones(); break;
+        case 5: SearchByName(); break;
+        case 6: UpdateIncome(); break;
 
         case 7:
         case 8:
@@ -87,19 +82,21 @@ namespace TechVille.Menu
           CityService.DisplayTotalServices();
           break;
 
-        case 11:
-          AddToLinkedQueue();
-          break;
+        // Singly Linked List
+        case 11: AddToSinglyList(); break;
+        case 12: singlyList.Display(); break;
+        case 13: RemoveFromSinglyList(); break;
 
-        case 12:
-          linkedList.Display();
-          break;
+        // Doubly Linked List
+        case 14: AddToDoublyList(); break;
+        case 15: doublyList.DisplayForward(); break;
+        case 16: doublyList.DisplayBackward(); break;
 
-        case 13:
-          RemoveFromLinkedQueue();
-          break;
+        // Circular Linked List
+        case 17: AddToCircularList(); break;
+        case 18: circularList.Display(); break;
 
-        case 14:
+        case 19:
           Console.WriteLine("Exiting system...");
           return false;
 
@@ -111,28 +108,18 @@ namespace TechVille.Menu
       return true;
     }
 
-    private void AddToLinkedQueue()
+    // ------------------ Singly ------------------
+
+    private void AddToSinglyList()
     {
-      Console.Write("Enter Citizen ID: ");
-      if (!int.TryParse(Console.ReadLine(), out int id))
-      {
-        Console.WriteLine("Invalid ID.");
-        return;
-      }
+      Citizen citizen = GetCitizenFromInput();
+      if (citizen == null) return;
 
-      Citizen citizen = manager.SearchCitizen(id);
-
-      if (citizen == null)
-      {
-        Console.WriteLine("Citizen not found.");
-        return;
-      }
-
-      linkedList.Insert(citizen);
-      Console.WriteLine("Citizen added to linked queue.");
+      singlyList.Insert(citizen);
+      Console.WriteLine("Citizen added to singly linked list.");
     }
 
-    private void RemoveFromLinkedQueue()
+    private void RemoveFromSinglyList()
     {
       Console.Write("Enter Citizen ID to remove: ");
       if (!int.TryParse(Console.ReadLine(), out int id))
@@ -141,26 +128,59 @@ namespace TechVille.Menu
         return;
       }
 
-      linkedList.Delete(id);
+      singlyList.Delete(id);
       Console.WriteLine("Removal operation completed.");
+    }
+
+    // ------------------ Doubly ------------------
+
+    private void AddToDoublyList()
+    {
+      Citizen citizen = GetCitizenFromInput();
+      if (citizen == null) return;
+
+      doublyList.Insert(citizen);
+      Console.WriteLine("Citizen added to doubly linked list.");
+    }
+
+    // ------------------ Circular ------------------
+
+    private void AddToCircularList()
+    {
+      Citizen citizen = GetCitizenFromInput();
+      if (citizen == null) return;
+
+      circularList.Insert(citizen);
+      Console.WriteLine("Citizen added to circular linked list.");
+    }
+
+    // ------------------ Shared Helpers ------------------
+
+    private Citizen GetCitizenFromInput()
+    {
+      Console.Write("Enter Citizen ID: ");
+      if (!int.TryParse(Console.ReadLine(), out int id))
+      {
+        Console.WriteLine("Invalid ID.");
+        return null;
+      }
+
+      Citizen citizen = manager.SearchCitizen(id);
+
+      if (citizen == null)
+      {
+        Console.WriteLine("Citizen not found.");
+        return null;
+      }
+
+      return citizen;
     }
 
     private void SearchById()
     {
-      Console.Write("Enter ID to search: ");
-      if (int.TryParse(Console.ReadLine(), out int id))
-      {
-        Citizen found = manager.SearchCitizen(id);
-
-        if (found != null)
-          manager.DisplayCitizen(found);
-        else
-          Console.WriteLine("Citizen not found.");
-      }
-      else
-      {
-        Console.WriteLine("Invalid ID.");
-      }
+      Citizen citizen = GetCitizenFromInput();
+      if (citizen != null)
+        manager.DisplayCitizen(citizen);
     }
 
     private void SearchByName()
@@ -173,40 +193,26 @@ namespace TechVille.Menu
     private void UpdateIncome()
     {
       Console.Write("Enter Citizen ID: ");
-      if (int.TryParse(Console.ReadLine(), out int updateId))
-      {
-        Console.Write("Enter new income: ");
-        if (double.TryParse(Console.ReadLine(), out double newIncome))
-        {
-          manager.UpdateIncome(updateId, newIncome);
-        }
-        else
-        {
-          Console.WriteLine("Invalid income value.");
-        }
-      }
-      else
+      if (!int.TryParse(Console.ReadLine(), out int updateId))
       {
         Console.WriteLine("Invalid ID.");
+        return;
       }
+
+      Console.Write("Enter new income: ");
+      if (!double.TryParse(Console.ReadLine(), out double newIncome))
+      {
+        Console.WriteLine("Invalid income value.");
+        return;
+      }
+
+      manager.UpdateIncome(updateId, newIncome);
     }
 
     private void HandleServiceRegistration(int serviceChoice)
     {
-      Console.Write("Enter Citizen ID: ");
-      if (!int.TryParse(Console.ReadLine(), out int id))
-      {
-        Console.WriteLine("Invalid ID.");
-        return;
-      }
-
-      Citizen citizen = manager.SearchCitizen(id);
-
-      if (citizen == null)
-      {
-        Console.WriteLine("Citizen not found.");
-        return;
-      }
+      Citizen citizen = GetCitizenFromInput();
+      if (citizen == null) return;
 
       CityService service = ServiceFactory.CreateService(serviceChoice);
 
@@ -225,14 +231,10 @@ namespace TechVille.Menu
       }
 
       if (service is IBookable bookable)
-      {
         bookable.Book();
-      }
 
       if (service is ITrackable trackable)
-      {
         trackable.TrackStatus();
-      }
     }
   }
 }

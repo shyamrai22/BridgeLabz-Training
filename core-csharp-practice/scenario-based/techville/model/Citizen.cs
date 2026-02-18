@@ -7,6 +7,8 @@ namespace TechVille.Model
     public double Income { get; set; }
     public int ResidencyYears { get; set; }
     public double EligibilityScore { get; set; }
+    public string ServicePackage { get; set; }
+
 
     public Citizen(string name, int age, double income, int years)
     {

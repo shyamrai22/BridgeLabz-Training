@@ -31,7 +31,28 @@ namespace TechVille.Service
           (citizen.Age * 0.3) +
           (citizen.Income * 0.2) +
           (citizen.ResidencyYears * 0.5);
+
+      AssignServicePackage(citizen);
     }
+
+    private void AssignServicePackage(Citizen citizen)
+    {
+      if (citizen.Age < 18)
+      {
+        citizen.ServicePackage = "Not Eligible";
+        return;
+      }
+
+      if (citizen.EligibilityScore < 20)
+        citizen.ServicePackage = "Basic";
+      else if (citizen.EligibilityScore < 40)
+        citizen.ServicePackage = "Silver";
+      else if (citizen.EligibilityScore < 60)
+        citizen.ServicePackage = "Gold";
+      else
+        citizen.ServicePackage = "Platinum";
+    }
+
 
     public void DisplayCitizen(Citizen citizen)
     {
@@ -39,6 +60,9 @@ namespace TechVille.Service
       Console.WriteLine(citizen.ToString());
       Console.WriteLine($"Income: {citizen.Income}");
       Console.WriteLine($"Eligibility Score: {citizen.EligibilityScore:F2}");
+      Console.WriteLine($"Service Package: {citizen.ServicePackage}");
     }
+
+
   }
 }

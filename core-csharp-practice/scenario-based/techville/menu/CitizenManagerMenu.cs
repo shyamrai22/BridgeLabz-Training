@@ -9,22 +9,38 @@ namespace TechVille.Menu
 
     public void Start()
     {
-      Citizen citizen = manager.RegisterCitizen();
-
-      // Basic Validation
-      if (citizen.Age < 18)
+      while (true)
       {
-        Console.WriteLine("Citizen is not eligible (Underage).");
-        return;
-      }
+        Console.WriteLine("\n1. Register Citizen");
+        Console.WriteLine("2. Exit");
+        Console.Write("Choose option: ");
 
-      if (citizen.ResidencyYears < 1)
-      {
-        Console.WriteLine("Citizen must have at least 1 year residency.");
-        return;
-      }
+        int choice = Convert.ToInt32(Console.ReadLine());
 
-      manager.DisplayCitizen(citizen);
+        switch (choice)
+        {
+          case 1:
+            Citizen citizen = manager.RegisterCitizen();
+
+            if (citizen.Age < 18)
+            {
+              Console.WriteLine("Citizen is underage.");
+              continue;
+            }
+
+            manager.DisplayCitizen(citizen);
+            break;
+
+          case 2:
+            Console.WriteLine("Exiting system...");
+            return;
+
+          default:
+            Console.WriteLine("Invalid choice.");
+            break;
+        }
+      }
     }
+
   }
 }

@@ -1,6 +1,7 @@
 using TechVille.Interface;
 using TechVille.Model;
 using TechVille.Utility;
+using TechVille.Exceptions;
 
 
 namespace TechVille.Service
@@ -15,55 +16,72 @@ namespace TechVille.Service
 
     public void RegisterCitizen()
     {
-      if (count >= citizens.Length)
+      try
       {
-        Console.WriteLine("Database full.");
-        return;
+        if (count >= citizens.Length)
+          throw new Exception("Database is full.");
+
+        Console.Write("Enter Citizen ID: ");
+        int id = Convert.ToInt32(Console.ReadLine());
+
+        if (IsDuplicateId(id))
+          throw new DuplicateCitizenException("Citizen ID already exists.");
+
+        Console.Write("Enter Name: ");
+        string name = Console.ReadLine();
+
+        Console.Write("Enter Age: ");
+        int age = Convert.ToInt32(Console.ReadLine());
+
+        if (age < 18)
+          throw new InvalidAgeException("Citizen must be 18 or older.");
+
+        Console.Write("Enter Income: ");
+        double income = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter Residency Years: ");
+        int years = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter Email: ");
+        string email = Console.ReadLine();
+
+        if (!ProfileUtility.ValidateEmail(email))
+          throw new Exception("Invalid email format.");
+
+        name = ProfileUtility.FormatName(name);
+
+        Citizen citizen = new Citizen(id, name, age, income, years, email);
+
+        CalculateEligibility(citizen);
+
+        citizens[count] = citizen;
+        citizenIds[count] = id;
+
+        count++;
+
+        Console.WriteLine("Citizen registered successfully.");
+      }
+      catch (InvalidAgeException ex)
+      {
+        Console.WriteLine($"Age Error: {ex.Message}");
+        ExceptionLogger.Log(ex.ToString());
+      }
+      catch (DuplicateCitizenException ex)
+      {
+        Console.WriteLine($"Duplicate Error: {ex.Message}");
+        ExceptionLogger.Log(ex.ToString());
+      }
+      catch (FormatException ex)
+      {
+        Console.WriteLine("Input format error. Please enter valid numeric values.");
+        ExceptionLogger.Log(ex.ToString());
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"Unexpected error: {ex.Message}");
+        ExceptionLogger.Log(ex.ToString());
       }
 
-      Console.Write("Enter Citizen ID: ");
-      int id = Convert.ToInt32(Console.ReadLine());
-
-      Console.Write("Enter Name: ");
-      string name = Console.ReadLine();
-
-      Console.Write("Enter Age: ");
-      int age = Convert.ToInt32(Console.ReadLine());
-
-      Console.Write("Enter Income: ");
-      double income = Convert.ToDouble(Console.ReadLine());
-
-      Console.Write("Enter Residency Years: ");
-      int years = Convert.ToInt32(Console.ReadLine());
-
-      Console.Write("Enter Email: ");
-      string email = Console.ReadLine();
-
-      if (!ProfileUtility.ValidateEmail(email))
-      {
-        Console.WriteLine("Invalid email format.");
-        return;
-      }
-
-      name = ProfileUtility.FormatName(name);
-
-      Citizen citizen = new Citizen(id, name, age, income, years, email);
-
-
-      CalculateEligibility(citizen);
-
-      citizens[count] = citizen;
-      citizenIds[count] = id;
-
-      // Assign zone randomly (for now)
-      Random random = new Random();
-      int zone = random.Next(0, 5);
-      int sector = random.Next(0, 5);
-      zones[zone, sector]++;
-
-      count++;
-
-      Console.WriteLine("Citizen registered successfully.");
     }
 
     public Citizen SearchCitizen(int id)
@@ -111,7 +129,6 @@ namespace TechVille.Service
       }
     }
 
-
     private void CalculateEligibility(Citizen citizen)
     {
       citizen.EligibilityScore =
@@ -139,7 +156,6 @@ namespace TechVille.Service
       else
         citizen.ServicePackage = "Platinum";
     }
-
 
     public void DisplayCitizen(Citizen citizen)
     {
@@ -186,7 +202,14 @@ namespace TechVille.Service
       citizen.Income = income;
     }
 
-
-
+    private bool IsDuplicateId(int id)
+    {
+      for (int i = 0; i < count; i++)
+      {
+        if (citizenIds[i] == id)
+          return true;
+      }
+      return false;
+    }
   }
 }

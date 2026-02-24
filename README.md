@@ -787,3 +787,125 @@
 ### 🔮 **Upcoming Learning**
 
 - **Advanced Testing & Validation Techniques**
+
+---
+## 📅 **Day 31**
+
+**Date:** 27-01-2026 (Tuesday)
+
+### 📘 **What I Learned**
+
+- Revised **Unit Testing**
+- Revised **Regular Expressions (Regex)**
+- Revised **Reflection**
+- Revised **Annotations**
+- Strengthened understanding of how these concepts work together in real-world applications
+- Improved clarity on validation, metadata handling, and dynamic code behavior
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - HealthCheckPro
+  - Event Tracker
+- Implemented concepts of:
+  - **Annotations**
+  - **Reflection**
+  - **JSON Output**
+- Applied testing and validation techniques in practical scenarios
+
+### 🔮 **Upcoming Learning**
+
+- **MSTesting**
+
+ ---
+ ## 📅 **Day 32**
+
+**Date:** 28-01-2026 (Wednesday)
+
+### 📘 **What I Learned**
+
+- Learned about **CSV Data Handling**
+- Understood how to read and write data using CSV format
+- Learned practical use cases of CSV in real-world applications
+- Gained clarity on handling structured tabular data efficiently
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - AeroVigil
+  - Validation on Bank Account
+- Solved assignment questions on **CSV Data Handling**
+- Strengthened understanding of file-based data processing
+
+### 🔮 **Upcoming Learning**
+
+- **JSON Data**
+
+---
+
+## 📅 **Day 33**
+
+**Date:** 29-01-2026 (Friday)
+
+### 📘 **What I Learned**
+
+- Learned about **JSON Data**
+- Understood its **structure and real-world use cases**
+- Learned how JSON is used for data exchange between systems
+- Gained clarity on serialization and deserialization concepts
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - StreamBuzz
+  - OceanFleet
+- Applied JSON concepts for structured data handling
+
+### 🔮 **Upcoming Learning**
+
+- **Design Principles**
+
+---
+
+## 📅 **Day 34**
+
+**Date:** 30-01-2026 (Friday)
+
+### 📘 **What I Learned**
+
+- Revised JSON concepts
+- Learned a few **advanced concepts related to JSON Data**
+- Improved understanding of structured data transformation
+- Strengthened knowledge of real-world JSON implementations
+
+### 📝 **Assignment for the Day**
+
+- Solved **two scenario-based questions**:
+  - LexicalTwist
+  - Future Logistics
+- Applied advanced JSON handling techniques
+
+### 🔮 **Upcoming Learning**
+
+- **Design Principles**
+
+---
+
+## 📅 **Day 35**
+
+**Date:** 31-01-2026 (Saturday)
+
+### 📘 **What I Learned**
+
+- Revised previously learned topics
+- Strengthened understanding of JSON and data handling concepts
+- Improved confidence in implementing structured data solutions
+
+### 📝 **Assignment for the Day**
+
+- Completed the assignment on **JSON Data**
+- Practiced applying previously learned concepts in structured problems
+
+### 🔮 **Upcoming Learning**
+
+- **Design Principles**

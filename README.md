@@ -1,911 +1,360 @@
-﻿# BridgeLabz-Training
----
-## 📅 Day 01
-**Date:** 18-12-2025 (Thursday)
-### 📘 What I Learned
-- .NET and C# fundamentals
-- Git fundamentals(Creation of Repository,creation of new branch, commit, push, status etc)
-- IL and CIL
-- Executing C# programs through terminal using:csc file.cs and file.exe
-  
+﻿# 🚀 BridgeLabz – Core C# Training
 
-### 📝 Assignment for the Day
-- Setup system for csharp and .net development
-- Solved **10 basic programming questions**(sum of two numbers, KM to Miles, Average of three numbers, Simple Interest etc)
+**Core C# Learning | Day-wise Progress | Hands-on Practice**
 
-### 🔮 Upcoming Learning
-- C# Elements of Programming:
-  - Variables  
-  - Literals  
-  - Primitive Data Types  
-  - Basic Input / Output  
-  - Operators  
----
-## 📅 Day 02
-
-**Date:** 19-12-2025 (Friday)
-
-### 📘 What I Learned
-
-* Basic architecture of .NET framework
-* Basic syntax, formatting, and technical structure of C#
-* Access modifiers in C# and their types (`public`, `private`, `protected`, `internal`, `protected internal`)
-* Data types in C#
-* Operators in C# and their usage
-* Type conversion (implicit and explicit) and use of operators in expressions
-
-### 📝 Assignment for the Day
-
-* Solved programming questions from **two different PDFs** based on programming elements
-* Implemented real-life problem solutions such as:
-
-  * Distance Conversion
-  * Interest Calculator
-  * Side of a Square calculation
-  * Other basic logic-based problems using C# programming elements
-
-### 🔮 Upcoming Learning
-
-* Control flow statements in C#
-* Advanced questions on programming elements
-* In-depth learning of Access Modifiers
----
-## 📅 Day 03
-
-**Date:** 20-12-2025 (Saturday)
-
-### 📘 What I Learned
-
-* Learned the overall **code structure of C# programs**
-* Did hands-on practice in C#, which enhanced my understanding of **syntax and formatting**
-* Practiced multiple questions involving **data types and operators** to understand them in depth
-* Gained detailed knowledge about **access modifiers** and their real-world usage in programs
-
-### 📝 Assignment for the Day
-
-* Solved the **second PDF of programming elements**
-* Worked on various problem statements that required using different **data types and operators**
-* Implemented logic for real-life problems such as:
-
-  * Swap Two Numbers
-  * Chocolate Distribution
-  * Finding Perimeter of Shapes
-  * Finding Area of Various Geometrical Shapes
-
-### 🔮 Upcoming Learning
-
-* Control flow statements in C#
-* Switch case statements in C#
----
-## 📅 Day 04
-
-**Date:** 21-12-2025 (Monday)
----
-## 📘 What I Learned
-
-- Learned the concept of **control flow statements** in C# and how they affect program execution  
-- Gained understanding of **conditional statements** such as `if`, `if-else`, and `switch`  
-- Learned about **different types of loops** in C# including:
-  - `for` loop  
-  - `while` loop  
-  - `do-while` loop  
-- Understood the **use cases of each loop** and when to use them  
-- Set up **Visual Studio** and learned how to:
-  - Create a new C# project  
-  - Build and run C# programs  
-- Improved coding skills through hands-on practice with control flow and looping concepts
-  
-## 📝 Assignment for the Day
-- Solved **Level 1 and Level 2 problems** based on:
-  - Control flow statements  
-  - Looping concepts  
-- Implemented multiple logic-based programs using conditions and loops  
-- Practiced problem-solving using real-life scenarios to strengthen programming logic
-   
-## 🔮 Upcoming Learning
-- Arrays in C#  
-- Strings in C#
----
- ## 📅 Day 05
-
-**Date:** 22-12-2025 (Tuesday)
-
-## 📘 What I Learned
-
-- Learned about **arrays in C#** and their importance in storing multiple values of the same data type  
-- Understood **array declaration, initialization, and indexing**  
-- Learned various **use cases of arrays** in real-world and programming problems  
-- Practiced accessing and manipulating array elements using loops  
-
-## 📝 Assignment for the Day
-
-- Solved **Level 3 problems** related to **control flow statements**  
-- Started solving **Level 1 problems of arrays**  
-- Practiced combining **loops and arrays** to solve logical problems  
-
-## 🔮 Upcoming Learning
-- Methods in C#
-
-  ---
-## 📅 Day 06
-
-**Date:** 23-12-2025 (Wednesday)
-
-## 📘 What I Learned
-
-- Learned about **2D arrays in C#** and their implementation  
-- Understood how to **declare, initialize, and access elements** of 2D arrays  
-- Learned the **basics of methods in C#**, including method declaration and usage  
-- Practiced breaking programs into **reusable methods** for better code structure  
-- Improved logical thinking by applying arrays and methods together
-   
-## 📝 Assignment for the Day
-
-- Solved **Level 2 problems on arrays**  
-- Worked on conventional problem statements using **1D and 2D arrays**, such as:
-  - BMI Calculation  
-  - Grades of Students  
-  - Finding the Largest and Second Largest Digit in a Number  
-- Strengthened understanding of array-based problem solving
-  
-## 🔮 Upcoming Learning
-
-- Methods in C#
----
-## 📅 **Day 07**
-
-**Date:** 24-12-2025 (Thursday)
-
-### 📘 **What I Learned**
-
-- Learned about **methods in C#**
-- Understood the **importance, implications, and use cases** of methods
-- Learned how methods improve **code reusability, modularity, and readability**
-- Practiced **method declaration, definition, and calling**
-- Improved logical thinking by breaking programs into **reusable methods**
-
-### 📝 **Assignment for the Day**
-
-- Solved **Level 1 and Level 2** problem sets on methods
-- Implemented **basic programming questions using methods**
-- Practiced **hands-on method calling** from the `Main()` method
-- Solved real-life based problems such as:
-  - Unit Conversion
-  - Voter’s Eligibility Check
-- Strengthened understanding of **method-based problem solving**
-
-### 🔮 **Upcoming Learning**
-
-- Solving **scenario-based questions**
-- Introduction to **OOPs**
+This repository documents my day-wise learning journey and hands-on practice during the Core C# training program at **BridgeLabz**. It focuses on building strong fundamentals through theory and practical console-based implementations.
 
 ---
 
-## 📅 **Day 08**
-
-**Date:** 26-12-2025 (Friday)
-
-### 📘 **What I Learned**
-
-- Learned how to solve **scenario-based problems**
-- Understood how to **approach problems step by step**
-- Practiced breaking complex scenarios into **smaller logical parts**
-- Did additional **research on methods** and learned their **use cases**
-- Improved analytical and problem-solving skills
-
-### 📝 **Assignment for the Day**
-
-- Solved a **scenario-based Snake and Ladder problem**
-- Solved **Level 3 problems on Methods**
-- Applied methods to handle **complex logic efficiently**
-
-### 🔮 **Upcoming Learning**
-
-- **OOPs (Object-Oriented Programming)**
+## 📅 Training Overview
+- **Technology:** Core C# (.NET)  
+- **Mode:** Hands-on, Console-based Programs  
+- **Organization:** BridgeLabz  
 
 ---
 
-## 📅 **Day 09**
+## 🗓️ Day 1 (18 Dec): .NET & C# Fundamentals
+### 🔹 Concepts Covered
+- Introduction to .NET Framework and architecture  
+- Structure of a C# program and `Main()` method  
 
-**Date:** 29-12-2025 (Monday)
-
-### 📘 **What I Learned**
-
-- Gained deeper understanding of solving **scenario-based questions**
-- Solved **two different scenario-based problems**, each involving **different scenarios**
-- Improved ability to analyze problem statements and design solutions
-- Learned about **Classes and Objects in OOPs**
-- Understood how real-world entities are represented using **classes and objects**
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**
-- Completed **Level 1 problems on Classes and Objects**
-- Practiced creating objects and accessing class members
-- Strengthened foundational knowledge of **OOPs concepts**
-
-### 🔮 **Upcoming Learning**
-
-- **Pillars of OOPs**
----
- ## 📅 **Day 10**
-
-**Date:** 30-12-2025 (Tuesday)
-
-### 📘 **What I Learned**
-
-- Learned about **constructors** and their role in object initialization
-- Understood the difference between **instance variables and class (static) variables**
-- Learned about **access modifiers** and their scope (`public`, `private`, `protected`, `internal`)
-- Gained clarity on how these concepts are applied in real-world programs
-- Strengthened understanding of **object-oriented fundamentals**
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - Library Management System
-  - EduQuiz
-- Solved **Level 1 problems** on:
-  - Constructors
-  - Access Modifiers
-  - Instance vs Class Variables
-- Practiced applying OOP concepts through hands-on coding
-
-### 🔮 **Upcoming Learning**
-
-- Keywords: **this**, **sealed**, **static**
-- **is operator**
+### 🔧 Hands-on Practice
+- Basic logical programs  
+- Console input/output  
 
 ---
 
-## 📅 **Day 11**
+## 🗓️ Day 2 (19 Dec): Core C# Language Basics
+### 🔹 Concepts Covered
+- Data types  
+- Operators:
+  - Arithmetic
+  - Relational
+  - Logical
+  - Assignment
+  - Unary  
 
-**Date:** 31-12-2025 (Wednesday)
-
-### 📘 **What I Learned**
-
-- Learned about the **this keyword** and its use in constructors and methods
-- Understood the purpose of the **sealed keyword**
-- Learned about the **static keyword** and static members
-- Understood the usage of the **is operator** for type checking
-- Improved clarity on controlling class behavior using keywords
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - Invoice Generator for Freelancer
-  - Bank Management System
-- Solved assignment questions on:
-  - **static keyword**
-  - **this keyword**
-  - **sealed keyword**
-  - **is operator**
-- Strengthened understanding of keyword-based logic in C#
-
-### 🔮 **Upcoming Learning**
-
-- **Object-Oriented Design Principles**
+### 🔧 Hands-on Practice
+- Programs using data types & operators  
+- Operator precedence  
 
 ---
 
-## 📅 **Day 12**
+## 🗓️ Day 3 (20 Dec): Program Structure & Access Modifiers
+### 🔹 Concepts Covered
+- Program structure & syntax  
+- Access modifiers  
 
-**Date:** 01-01-2026 (Thursday)
+### 🔧 Hands-on Practice
+- Swap numbers  
+- Chocolate distribution  
+- Perimeter & area calculations  
 
-### 📘 **What I Learned**
-
-- Learned about **Object-Oriented Design Principles**
-- Understood the importance of designing **scalable and maintainable software**
-- Gained insight into principles such as **encapsulation, abstraction, and modular design**
-- Learned how design principles help reduce code complexity
-
-### 📝 **Assignment for the Day**
-
-- Solved **one scenario-based question**:
-  - Cafeteria System
-- Solved assignment questions on **Object-Oriented Design Principles**
-- Applied design principles to structure clean and efficient code
-
-### 🔮 **Upcoming Learning**
-
-- **Inheritance**
-  
----
- ## 📅 **Day 13**
-
-**Date:** 02-01-2026 (Friday)
-
-### 📘 **What I Learned**
-
-- Learned about **Inheritance in OOPs**
-- Understood how inheritance helps in **code reusability** and hierarchical relationships
-- Learned how child classes inherit properties and methods from parent classes
-- Improved understanding of real-life examples mapped using inheritance
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - Festival Lucky Draw
-  - Bus Route Distance Tracker
-- Solved practice questions based on **Inheritance**
-- Strengthened understanding of **parent-child class relationships**
-
-### 🔮 **Upcoming Learning**
-
-- **Encapsulation**
-- **Abstraction**
-- **Polymorphism**
+### 🧠 Learning Outcome
+- Improved syntax understanding  
+- Better use of operators & modifiers  
 
 ---
 
-## 📅 **Day 14**
+## 🗓️ Day 4 (22 Dec): Operators & Practical Programming
+### 🔹 Concepts Covered
+- Arithmetic operations  
+- Type conversion  
+- Access modifiers  
 
-**Date:** 03-01-2026 (Saturday)
-
-### 📘 **What I Learned**
-
-- Learned more about **OOPs concepts** and their real-world applications
-- Understood the role and **usage of access modifiers** in OOPs
-- Learned how access modifiers control data accessibility and security
-- Strengthened conceptual clarity of object-oriented programming
-
-### 📝 **Assignment for the Day**
-
-- Solved practice questions on:
-  - **Single Inheritance**
-  - **Multilevel Inheritance**
-- Implemented inheritance concepts using proper access modifiers
-- Improved logical understanding of class hierarchies
-
-### 🔮 **Upcoming Learning**
-
-- **Encapsulation**
-- **Polymorphism**
-- **Abstraction**
+### 🔧 Hands-on Practice
+- Conversion programs  
+- Logic-based problems  
 
 ---
 
-## 📅 **Day 15**
+## 🗓️ Day 5 (23 Dec): Control Flow & Loops
+### 🔹 Concepts Covered
+- `if`, `else`, `switch`  
+- `for`, `while`, `do-while`  
+- `break`, `continue`  
 
-**Date:** 05-01-2026 (Monday)
-
-### 📘 **What I Learned**
-
-- Learned about **Encapsulation**, **Polymorphism**, and **Abstraction**
-- Understood the **usage and importance** of these OOPs concepts
-- Learned how to implement OOPs concepts in **real-life scenarios**
-- Improved ability to design modular and maintainable applications
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - Hospital Patient Management System
-  - Vehicle Management System
-- Applied different **OOPs concepts** to solve real-world problems
-- Strengthened hands-on understanding of **object-oriented programming**
-
-### 🔮 **Upcoming Learning**
-
-- More on **Four Pillars of OOPs**
-
----
-   ## 📅 **Day 16**
-
-**Date:** 06-01-2026 (Tuesday)
-
-### 📘 **What I Learned**
-
-- Learned about **Polymorphism** and **Abstraction** in OOPs
-- Understood how polymorphism enables **multiple behaviors** for the same method
-- Learned how abstraction helps in **hiding implementation details**
-- Gained clarity on applying these concepts to real-world scenarios
-
-### 📝 **Assignment for the Day**
-
-- Solved a **scenario-based question**:
-  - Customer Service Call Log Manager (tracking and managing call logs)
-- Applied polymorphism and abstraction concepts to design the solution
-- Strengthened understanding of real-life OOPs implementation
-
-### 🔮 **Upcoming Learning**
-
-- **Linked List**
+### 🔧 Hands-on Practice
+- Conditional programs  
+- Loop problems  
+- Menu-driven apps  
 
 ---
 
-## 📅 **Day 17**
+## 🗓️ Day 6 (24 Dec): Arrays & Math Utilities
+### 🔹 Concepts Covered
+- Arrays  
+- Math functions  
+- Coding practices  
 
-**Date:** 07-01-2026 (Wednesday)
+### 🔧 Hands-on Practice
+- Prime, palindrome, Armstrong  
+- Matrix operations  
 
-### 📘 **What I Learned**
-
-- Learned about **Linked List**, its implementation, and use cases
-- Understood different operations on linked lists
-- Learned how to solve **scenario-based questions using use-case-driven approaches**
-- Practiced pushing scenario-based logic **partially based on use cases**
-
-### 📝 **Assignment for the Day**
-
-- Solved a **scenario-based problem** using newly learned methods
-- Solved assignment questions on **Linked List**
-- Strengthened understanding of linked list traversal and manipulation
-
-### 🔮 **Upcoming Learning**
-
-- **Stack**
-- **Queue**
-- **HashMap**
-- **Hash Functions**
+### 🧠 Learning Outcome
+- Stronger problem-solving  
 
 ---
 
-## 📅 **Day 18**
+## 🗓️ Day 7 (26 Dec): Strings
+### 🔹 Concepts Covered
+- String operations  
+- String vs StringBuilder  
 
-**Date:** 08-01-2026 (Thursday)
-
-### 📘 **What I Learned**
-
-- Learned about **Stack**, **Queue**, **HashMap**, and **Hash Functions**
-- Understood their **implementations and use cases**
-- Learned how these data structures improve performance and efficiency
-- Gained clarity on choosing the right data structure for a given problem
-
-### 📝 **Assignment for the Day**
-
-- Solved a **scenario-based question**:
-  - Smart Home Automation System
-- Solved assignment questions on:
-  - Stack
-  - Queue
-  - HashMap
-  - Hash Functions
-- Applied data structures to real-world scenarios
-
-### 🔮 **Upcoming Learning**
-
-- **Sorting Algorithms**
+### 🔧 Hands-on Practice
+- Reverse string  
+- Word count  
+- Text cleaner  
 
 ---
 
-## 📅 **Day 19**
+## 🗓️ Day 8 (29 Dec): Arrays
+### 🔹 Concepts Covered
+- Array operations  
+- Searching & min/max  
 
-**Date:** 09-01-2026 (Friday)
-
-### 📘 **What I Learned**
-
-- Learned about **different sorting algorithms**
-- Understood **how and when to use specific sorting techniques** for efficiency
-- Gained insight into time and space complexity considerations
-- Learned how sorting improves data processing performance
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - ATM Dispenser
-  - FitTrack – Fitness Tracker
-- Solved assignment questions based on **sorting algorithms**
-- Strengthened understanding of sorting through practical use cases
-
-### 🔮 **Upcoming Learning**
-
-- **Linear Search**
-- **Binary Search**
----
-
-  ## 📅 **Day 20**
-
-**Date:** 12-01-2026 (Monday)
-
-### 📘 **What I Learned**
-
-- Learned about **Linear Search** and **Binary Search**
-- Understood their **implementations and use cases**
-- Learned how to choose between linear and binary search based on data size and order
-- Gained clarity on efficiency differences between search techniques
-
-### 📝 **Assignment for the Day**
-
-- Solved **three scenario-based questions**:
-  - Loan Buddy
-  - Metal Factory Pipe Cutting
-  - Custom Furniture Manufacturing
-- Solved assignment questions on:
-  - Linear Search
-  - Binary Search
-- Strengthened understanding of searching techniques through real-world scenarios
-
-### 🔮 **Upcoming Learning**
-
-- **Algorithm’s Runtime Analysis**
-- **Big-O Notation**
+### 🔧 Hands-on Practice
+- Salary calculations  
+- Data analysis  
 
 ---
 
-## 📅 **Day 21**
+## 🗓️ Day 9 (30 Dec): Constructors & Variables
+### 🔹 Concepts Covered
+- Constructors  
+- Instance vs static  
 
-**Date:** 13-01-2026 (Tuesday)
-
-### 📘 **What I Learned**
-
-- Learned about **Algorithm’s Runtime Analysis**
-- Understood **Big-O Notation** and its importance in measuring algorithm efficiency
-- Learned how to analyze time complexity for different algorithms
-- Gained insight into optimizing code performance
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - Book Buddy
-  - CinemaTalk
-- Applied **OOPs concepts** and their implementations in these problems
-- Solved assignment questions on:
-  - Runtime Analysis
-  - Big-O Notation
-
-### 🔮 **Upcoming Learning**
-
-- **Generics**
+### 🔧 Hands-on Practice
+- Library Management System  
 
 ---
 
-  ## 📅 **Day 22**
+## 🗓️ Day 10 (31 Dec): Methods
+### 🔹 Concepts Covered
+- Method types  
+- Overloading  
+- Scope  
 
-**Date:** 14-01-2026 (Wednesday)
-
-### 📘 **What I Learned**
-
-- Learned a **new way of solving problems based on use cases**
-- Understood how to **commit solutions on GitHub** following use-case-driven approaches
-- Learned how structuring code around use cases improves clarity and maintainability
-
-### 📝 **Assignment for the Day**
-
-- Solved a **scenario-based Address Book problem**
-- Applied use-case-based logic while implementing the solution
-- Practiced committing structured solutions to GitHub
-
-### 🔮 **Upcoming Learning**
-
-- **Generics**
+### 🔧 Hands-on Practice
+- Modular programs  
+- Menu-driven apps  
 
 ---
 
-## 📅 **Day 23**
+## 🗓️ Day 11 (01 Jan): OOP Basics
+### 🔹 Concepts Covered
+- Classes & objects  
+- Encapsulation  
 
-**Date:** 15-01-2026 (Thursday)
-
-### 📘 **What I Learned**
-
-- Learned the practical **uses of core DSA concepts**:
-  - Stack
-  - Queue
-  - Linked List
-  - Dictionary
-  - Searching
-  - Sorting
-- Understood how these data structures are selected based on **problem requirements**
-- Improved clarity on applying DSA concepts in real-world scenarios
-
-### 📝 **Assignment for the Day**
-
-- Solved a **scenario-based question**:
-  - Browser Buddy
-- Implemented the solution using:
-  - **Doubly Linked List**
-  - **Stack**
-- Strengthened understanding of combining multiple data structures in one problem
-
-### 🔮 **Upcoming Learning**
-
-- **Generics**
+### 🔧 Hands-on Practice
+- Bank system  
 
 ---
 
-## 📅 **Day 24**
+## 🗓️ Day 12 (02 Jan): Inheritance
+### 🔹 Concepts Covered
+- Base & derived classes  
 
-**Date:** 16-01-2026 (Friday)
-
-### 📘 **What I Learned**
-
-- Learned the practical **uses of core DSA concepts**:
-  - Stack
-  - Queue
-  - Linked List
-  - Dictionary
-  - Searching
-  - Sorting
-- Understood how these data structures are selected based on **problem requirements**
-- Improved clarity on applying DSA concepts in real-world scenarios
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - Traffic Manager
-  - Bookshelf – Library Organization Story
-- Applied appropriate data structures based on use cases
-- Strengthened real-world problem-solving skills using DSA
-
-### 🔮 **Upcoming Learning**
-
-- **Generics**
+### 🔧 Hands-on Practice
+- Inheritance programs  
 
 ---
 
-## 📅 **Day 25**
+## 🗓️ Day 13 (03 Jan): OOPS Deep Dive
+### 🔹 Concepts Covered
+- Inheritance  
+- Access control  
 
-**Date:** 17-01-2026 (Saturday)
-
-### 📘 **What I Learned**
-
-- Learned the practical **uses of core DSA concepts**:
-  - Stack
-  - Queue
-  - Linked List
-  - Dictionary
-  - Searching
-  - Sorting
-- Understood how these data structures are selected based on **problem requirements**
-- Improved clarity on applying DSA concepts in real-world scenarios
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - FlashDealz – Product Sorting by Discount (**Quick Sort**)
-  - Fitness App Tracking using **Bubble Sort**
-- Applied different sorting algorithms based on problem constraints
-- Strengthened understanding of algorithm selection and efficiency
-
-### 🔮 **Upcoming Learning**
-
-- **Generics**
-
-- --
-## 📅 **Day 26**
-
-**Date:** 19-01-2026 (Monday)
-
-### 📘 **What I Learned**
-
-- Learned the **basics of Generics** in C#
-- Understood the **use cases of Generics** and how they improve code reusability
-- Learned how Generics help in writing **type-safe and flexible code**
-- Gained clarity on how Generics reduce redundancy and improve maintainability
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - **Parcel Tracker**
-    - Implemented using **Singly Linked List**
-  - **Exam Proctor**
-    - Implemented using **Stack**, **HashMap**, and **Functions**
-- Solved the **assignment problems on Generics**
-- Strengthened understanding of applying Generics in real-world scenarios
-
-### 🔮 **Upcoming Learning**
-
-- **Collections**
+### 🔧 Hands-on Practice
+- Single & multilevel inheritance  
 
 ---
 
-## 📅 **Day 27**
+## 🗓️ Day 14 (05 Jan): Abstraction & Polymorphism
+### 🔹 Concepts Covered
+- Abstract classes  
+- Interfaces  
+- Polymorphism  
 
-**Date:** 20-01-2026 (Tuesday)
-
-### 📘 **What I Learned**
-
-- Learned the **basics of Collections** in C#
-- Understood the **use cases of Collections** and when to use them
-- Learned how Collections are used to manage dynamic data efficiently
-- Gained clarity on implementing Collections in real-world C# programs
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - Sorting **Aadhar Numbers using Radix Sort**
-  - **Password Checker Simulator**
-- Solved the **assignment problems on Collections**
-- Practiced combining **Collections with algorithms** for efficient solutions
-
-### 🔮 **Upcoming Learning**
-
-**C# Streams**
-
----
-## 📅 **Day 28**
-
-**Date:** 21-01-2026 (Wednesday)
-
-### 📘 **What I Learned**
-
-- Learned the **introduction to C# Streams**
-- Understood the **use cases of C# Streams** for reading and writing data
-- Learned how streams help in handling **files and data flow efficiently**
-- Gained clarity on applying streams in real-world applications
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - Result & Rank Sheet Generator
-  - Smart Checkout – Supermarket Billing Queue
-- Solved the **assignment questions on C# Streams**
-- Practiced using streams for structured data processing
-
-### 🔮 **Upcoming Learning**
-
-- **Exception Handling in C#**
+### 🔧 Hands-on Practice
+- Real-world systems (Bank, Hospital, E-Commerce)  
 
 ---
 
-## 📅 **Day 29**
-
-**Date:** 22-01-2026 (Thursday)
-
-### 📘 **What I Learned**
-
-- Learned about **Exception Handling in C#**
-- Understood the importance of handling runtime errors gracefully
-- Learned different exception handling constructs:
-  - `try`
-  - `catch`
-  - `finally`
-  - `throw`
-- Gained insight into writing **robust and fault-tolerant code**
-
-### 📝 **Assignment for the Day**
-
-- Solved a **scenario-based question**:
-  - Ambulance Route Emergency Patient Navigator  
-    - Implemented using **Circular Linked List**
-- Solved the **assignment questions on Exception Handling**
-- Strengthened understanding of error handling in real-life scenarios
-
-### 🔮 **Upcoming Learning**
-
-- **Regex**
-- **Unit Testing**
+## 🗓️ Day 15 (06 Jan): Arrays + OOPS
+### 🔧 Hands-on Practice
+- Bird Sanctuary  
+- Call Log Manager  
 
 ---
 
-## 📅 **Day 30**
+## 🗓️ Day 16 (07 Jan): Linked List
+### 🔹 Concepts Covered
+- Singly & Doubly Linked List  
 
-**Date:** 23-01-2026 (Friday)
-
-### 📘 **What I Learned**
-
-- Learned about **Regular Expressions (Regex)**
-- Understood how Regex is used for **pattern matching and validation**
-- Learned about **Unit Testing**
-- Understood the importance of testing individual components of code
-
-### 📝 **Assignment for the Day**
-
-- Completed and submitted the **assignments provided on**:
-  - **Regex**
-  - **Unit Testing**
-- Practiced validating inputs and testing code functionality
-
-### 🔮 **Upcoming Learning**
-
-- **Advanced Testing & Validation Techniques**
-
----
-## 📅 **Day 31**
-
-**Date:** 27-01-2026 (Tuesday)
-
-### 📘 **What I Learned**
-
-- Revised **Unit Testing**
-- Revised **Regular Expressions (Regex)**
-- Revised **Reflection**
-- Revised **Annotations**
-- Strengthened understanding of how these concepts work together in real-world applications
-- Improved clarity on validation, metadata handling, and dynamic code behavior
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - HealthCheckPro
-  - Event Tracker
-- Implemented concepts of:
-  - **Annotations**
-  - **Reflection**
-  - **JSON Output**
-- Applied testing and validation techniques in practical scenarios
-
-### 🔮 **Upcoming Learning**
-
-- **MSTesting**
-
- ---
- ## 📅 **Day 32**
-
-**Date:** 28-01-2026 (Wednesday)
-
-### 📘 **What I Learned**
-
-- Learned about **CSV Data Handling**
-- Understood how to read and write data using CSV format
-- Learned practical use cases of CSV in real-world applications
-- Gained clarity on handling structured tabular data efficiently
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - AeroVigil
-  - Validation on Bank Account
-- Solved assignment questions on **CSV Data Handling**
-- Strengthened understanding of file-based data processing
-
-### 🔮 **Upcoming Learning**
-
-- **JSON Data**
+### 🔧 Hands-on Practice
+- Insert/delete operations  
 
 ---
 
-## 📅 **Day 33**
-
-**Date:** 29-01-2026 (Friday)
-
-### 📘 **What I Learned**
-
-- Learned about **JSON Data**
-- Understood its **structure and real-world use cases**
-- Learned how JSON is used for data exchange between systems
-- Gained clarity on serialization and deserialization concepts
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - StreamBuzz
-  - OceanFleet
-- Applied JSON concepts for structured data handling
-
-### 🔮 **Upcoming Learning**
-
-- **Design Principles**
+## 🗓️ Day 17 (08 Jan): Stack, Queue, Dictionary
+### 🔧 Hands-on Practice
+- Stack & queue problems  
+- HashMap usage  
 
 ---
 
-## 📅 **Day 34**
-
-**Date:** 30-01-2026 (Friday)
-
-### 📘 **What I Learned**
-
-- Revised JSON concepts
-- Learned a few **advanced concepts related to JSON Data**
-- Improved understanding of structured data transformation
-- Strengthened knowledge of real-world JSON implementations
-
-### 📝 **Assignment for the Day**
-
-- Solved **two scenario-based questions**:
-  - LexicalTwist
-  - Future Logistics
-- Applied advanced JSON handling techniques
-
-### 🔮 **Upcoming Learning**
-
-- **Design Principles**
+## 🗓️ Day 18 (09 Jan): Sorting
+### 🔧 Hands-on Practice
+- Bubble, Selection, Insertion Sort  
 
 ---
 
-## 📅 **Day 35**
+## 🗓️ Day 19 (12 Jan): Searching & I/O
+### 🔧 Hands-on Practice
+- Linear & Binary Search  
 
-**Date:** 31-01-2026 (Saturday)
+---
 
-### 📘 **What I Learned**
+## 🗓️ Day 20 (13 Jan): Big-O
+### 🔧 Hands-on Practice
+- Complexity analysis  
 
-- Revised previously learned topics
-- Strengthened understanding of JSON and data handling concepts
-- Improved confidence in implementing structured data solutions
+---
 
-### 📝 **Assignment for the Day**
+## 🗓️ Day 21 (14 Jan): Custom Data Structures
+### 🔧 Hands-on Practice
+- BookBuddy  
+- CinemaTime  
 
-- Completed the assignment on **JSON Data**
-- Practiced applying previously learned concepts in structured problems
+---
 
-### 🔮 **Upcoming Learning**
+## 🗓️ Day 22 (15 Jan): Address Book
+### 🔧 Hands-on Practice
+- Sorting, searching, duplicate detection  
 
-- **Design Principles**
+---
+
+## 🗓️ Day 23 (16 Jan): Linked List + Queue
+### 🔧 Hands-on Practice
+- Traffic Manager  
+
+---
+
+## 🗓️ Day 24 (17 Jan): Bubble Sort Use Cases
+### 🔧 Hands-on Practice
+- Product sorting  
+- Ranking systems  
+
+---
+
+## 🗓️ Day 25 (19 Jan): Linked List + Stack + Map
+### 🔧 Hands-on Practice
+- Parcel Tracker  
+- Exam Proctor  
+
+---
+
+## 🗓️ Day 26 (20 Jan): Advanced Sorting
+### 🔧 Hands-on Practice
+- Heap, Merge, Counting, Radix  
+
+---
+
+## 🗓️ Day 27 (21 Jan): Streams & File Handling
+### 🔧 Hands-on Practice
+- File processing  
+- Serialization  
+
+---
+
+## 🗓️ Day 28 (22 Jan): Exception Handling
+### 🔧 Hands-on Practice
+- Custom exceptions  
+- Real-world error handling  
+
+---
+
+## 🗓️ Day 29 (23 Jan): Regex & Testing
+### 🔧 Hands-on Practice
+- Regex validation  
+- Unit testing  
+
+---
+
+## 🗓️ Day 30 (27 Jan): Attributes & Reflection
+### 🔧 Hands-on Practice
+- Reflection  
+- Dynamic invocation  
+
+---
+
+## 🗓️ Day 31 (28 Jan): CSV Handling
+### 🔧 Hands-on Practice
+- CSV read/write  
+- Validation  
+
+---
+
+## 🗓️ Day 32 (29 Jan): JSON Processing
+### 🔧 Hands-on Practice
+- Serialization  
+- Dictionary + OOPS  
+
+---
+
+## 🗓️ Day 33–34: Scenario-Based Problems
+- Real-world problem solving  
+- Code optimization  
+
+---
+
+## 🗓️ Day 35 (02 Feb): SOLID Principles
+### 🔧 Hands-on Practice
+- Clean architecture  
+
+---
+
+## 🗓️ Day 36 (03 Feb): Design Patterns
+- Architecture-based problems  
+
+---
+
+## 🗓️ Day 37–38: Multithreading & Async
+### 🔧 Hands-on Practice
+- Parallel execution  
+- Thread safety  
+
+---
+
+## 🗓️ Day 39–44: SQL & Database Integration
+### 🔹 Concepts Covered
+- SQL basics to advanced  
+- Joins, triggers, procedures  
+- DB integration  
+
+### 🔧 Hands-on Practice
+- Healthcare DB  
+- Smart City System  
+
+---
+
+## 🗓️ Day 45 (13 Feb): NotifyHub System
+### 🔹 Concepts Covered
+- Multithreading  
+- Async processing  
+- Concurrent design  
+
+### 🔧 Hands-on Practice
+- Notification processing system  
+
+### 🧠 Learning Outcome
+- Built scalable concurrent system  
+- Integrated OOPS + async + collections  
+
+---
+
+## 📌 Final Outcome
+- Strong foundation in Core C#  
+- Hands-on experience with OOPS, DSA, and system design  
+- Built multiple real-world console applications  
